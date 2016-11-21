@@ -1,5 +1,8 @@
 [name] New design 1 (Copy)
 [puzzle] Sz044
+[production-cost] 1800
+[power-usage] 5126
+[lines-of-code] 43
 
 [traces] 
 ......................

@@ -83,7 +83,6 @@ E:slx x0
 - sub dat
 - mul acc
 - mov acc x2
-  
 
 [chip] 
 [type] UC4X
