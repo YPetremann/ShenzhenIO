@@ -1,7 +1,7 @@
 [name] PRODUCTION COST
 [puzzle] Sz005
-[production-cost] 700
-[power-usage] 362
+[production-cost] 600
+[power-usage] 358
 [lines-of-code] 9
 
 [traces] 
@@ -12,55 +12,50 @@
 ......................
 ......................
 ......................
-.............1541C....
-....15555554..94.A....
-..........14.16..2....
-........1554.1C.......
-..........15556.......
+......154.154.........
+....8.154.............
+....35554.15555414....
+......................
+......................
 ......................
 ......................
 
 [chip] 
-[type] DIAL1
-[x] 9
-[y] 2
+[type] UC6
+[x] 8
+[y] 4
+[code] 
+  teq p1  x0
++ mov 100 dat
+  teq p1  x1
++ mov 0   dat
+  teq dat 0
+- tlt p0  20
+- mov 1   x2
++ mov 0   x2
+  slp 1
+
+[chip] 
+[type] DX3
+[x] 15
+[y] 4
+
+[chip] 
+[type] DIAL2
+[x] 5
+[y] 5
 [is-puzzle-provided] true
 
 [chip] 
 [type] RTC
-[x] 6
-[y] 3
+[x] 12
+[y] 5
+[rotated] true
 [is-puzzle-provided] true
 
 [chip] 
-[type] UC4
-[x] 11
-[y] 3
-[code] 
-  teq p0  x1
-+ mov 100 p1
-  teq p0  x0
-+ mov 0   p1
-  slp 1
-
-[chip] 
-[type] DIAL2
-[x] 9
-[y] 4
+[type] DIAL1
+[x] 5
+[y] 6
 [is-puzzle-provided] true
-
-[chip] 
-[type] UC4
-[x] 11
-[y] 5
-[code] 
-  tlt p0  20
-- mov 100 p1
-+ mov 0   p1
-  slp 1
-
-[chip] 
-[type] AND
-[x] 15
-[y] 5
 
