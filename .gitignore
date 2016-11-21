@@ -1,2 +1,7 @@
 *.dat
+config.cfg
+name
+.*
 deleted/
+custom_screens/
+prototyping-area-*.txt
