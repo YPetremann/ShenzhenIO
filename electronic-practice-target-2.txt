@@ -1,0 +1,172 @@
+[name] New design 1 (Copy)
+[puzzle] Sz041
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..15C....15C..........
+..8.A14.154A154154....
+..343C...1CA..95C.....
+..15C34..16A156.34....
+..8.354..15614.155C...
+..34.14..14....1C.A...
+................342...
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 3
+[code] 
+# transmission
+  slx x1
+  mov x1  null
+  mov p0  x1
+  mov p1  x1
+
+[chip] 
+[type] BRIDGE
+[x] 6
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 3
+[code] 
+  slx x3
+  teq p1  1
++ mov x3  acc
++ mov 0   dat
+- mov x3  dat
+  mov x3  x2
+  mov acc x2
+  mov dat x2
+
+[chip] 
+[type] UC4X
+[x] 10
+[y] 3
+[code] 
+  slx x1
+  teq x1  1
++ mov 40  acc
+- teq acc 0
+- sub 5
+  mov acc x3
+  mov x1  x3
+  mov x1  x3
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 3
+[code] 
+  slx x1
+  mov x1 x0
+
+[chip] 
+[type] UC6
+[x] 17
+[y] 3
+[code] 
+
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 6
+[code] 
+# calculation
+  teq p0  0
++ mov -1 x3
+- mov 0   x0
+- mov x0  acc
+- sub 50
+- mul acc
+- mov acc dat
+- mov x0  acc
+- sub 50
+- mul acc
+- add dat
+- mov acc x3
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 6
+[code] 
+# score
+  mov x1  dat
+  mov -2  acc
+  tlt dat 900
++ add 3
+  tlt dat 400
++ add 1
+  tlt dat 100
++ add 2
+  tlt dat 0
++ mov 0   acc
+  mov acc x3
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 6
+[code] 
+# step system
+  mov x1  dat
+  teq dat 0
++ mov 0   x3
+- mov 1   x3
+  teq x3  1
++ mov 0   acc
+  add dat
+  mov x3  p0
+  mov acc x0
+  teq x3  1
++ mov 1   x0
+- mov 0   x0
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 6
+[code] 
+# step calc 1
+0:slx x1
+  add x1
+  mov acc x3
+  mov x3 x1
+  mov x3 x1
+  teq acc 5
++ add 1
+  teq acc 9
+- teq acc 0
++ mov 0   acc
++ mov 0   x1
+- mov 1   x1
+
+[chip] 
+[type] UC6
+[x] 17
+[y] 6
+[code] 
+# step calc 2
+  slx x1
+  mov x1 acc
+  teq acc 5
+- teq acc 0
+- mov 0   x1
++ mov 1   x1
+  tlt acc 5
++ mov 1   x1
+- mov 2   x1
+

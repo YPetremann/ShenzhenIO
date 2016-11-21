@@ -1,0 +1,132 @@
+[name] New design 1 (Copy)
+[puzzle] Sz018
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......15C....954......
+..8...94A154.A14.15C..
+..35C16.A155C354...2..
+....354.A..83494.1C...
+.....154A14354A..168..
+..14....A14.14355556..
+........3555555554....
+......................
+......................
+
+[chip] 
+[type] BRIDGE
+[x] 17
+[y] 2
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 3
+[code] 
+0:teq p1 100
+- slp 1
+- mov -1 x3
+- jmp 0
+  mov p0 acc
+  dgt 1
+  sub 3
+  teq acc -1
++ add 1
+  tlt acc 0
++ jmp E
+  mov acc x3
+E:slp 1
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 3
+[code] 
+0:slx x1
+  mov x1 dat
+  teq dat -1
++ jmp C
+- mov dat x3
+- mov x2 acc
+- add 1
+- mov dat x3
+- mov acc x2
+- jmp 0
+C:mov 0 x3
+L:teq x3 6
+- mov 0 x2
+- jmp L
+
+[chip] 
+[type] RAM
+[x] 10
+[y] 3
+
+[chip] 
+[type] BRIDGE
+[x] 13
+[y] 3
+
+[chip] 
+[type] BRIDGE
+[x] 11
+[y] 5
+
+[chip] 
+[type] UC6
+[x] 15
+[y] 5
+[code] 
+  mov 50 p1
+  mov 50 p0
+L:slx x2
+  mov x2 acc
+  mul 2
+  mov acc x0
+  mov x1 p1
+  mov x1 p0
+  jmp L
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 6
+[code] 
+  teq p0 100
++ mov 1 acc
++ jmp E
+  teq acc 0
+- mov 1 x1
+- mov 0 acc
+E:slp 1
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 6
+[code] 
+  slx x1
+  teq x1 1
+  mov 0 x2
+  mov 0 dat
+L:tgt x3 dat
++ mov x2 acc
++ sub 1
++ mov acc x2
++ mov x3 dat
+  teq x2 6
+- jmp L
+  mov acc x0
+E:slp 1
+
+[chip] 
+[type] BANK
+[x] 12
+[y] 7
+[rom] 
+95,5,50,5,5,5,5,60,15,80,75,85,0,0
+

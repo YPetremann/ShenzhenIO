@@ -1,0 +1,61 @@
+[name] New design 1 (Copy)
+[puzzle] Sz007EZ
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+....955555555C........
+....A.955555C3555554..
+..94A1694.1C35555554..
+..2.A156...355555554..
+..94A1554.1555555554..
+..356..94..955555554..
+.......35556..........
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 8
+[y] 3
+[code] 
+  slx x0
+  teq x0 3
++ gen p1 2 0
+- gen p1 1 0
+  mov 0 x0
+  slx x0
+  mov x0 null
+  gen p0 3 0
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 4
+[code] 
+  slx x0
+  mov x0 acc
+  gen p0 1 0
+  gen p1 1 0
+  mov acc x3
+  slx x3
+  mov x3 null
+  mov acc x2
+  slx x2
+  mov x2 null
+  gen p0 1 0
+  mov acc x2
+
+[chip] 
+[type] UC4
+[x] 8
+[y] 5
+[code] 
+  slx x0
+  teq x0 2
+- gen p1 1 0
+  mov 0 x0
+

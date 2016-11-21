@@ -1,0 +1,145 @@
+[name] New design 1 (Copy)
+[puzzle] Sz040
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+.....955555D555C......
+..154A..954A14.A......
+...94A15615E14.A......
+...A.A155C.A14.A......
+...34A14.34A14.34.14..
+...15614.15614.94..8..
+......14....14.35556..
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 2
+[code] 
+  slx x0
+  teq x0 1
++ teq acc 0
++ mov p1 x1
++ mov x2 x1
++ add x3
+  tgt acc 0
++ sub 1
+
+[chip] 
+[type] DIAL11
+[x] 7
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 2
+[code] 
+  slx x0
+  teq x0 1
++ teq acc 0
++ mov p1 x1
++ mov x2 x1
++ add x3
+  tgt acc 0
++ sub 1
+
+[chip] 
+[type] DIAL12
+[x] 13
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL8
+[x] 7
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL9
+[x] 13
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 3
+[code] 
+  slx x0
+  teq x0 0
++ mov x0 p0
+- mov x0 p1
+  slp 1
++ mov 0 p0
+- mov 0 p1
+
+[chip] 
+[type] SWITCH14
+[x] 7
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] SWITCH15
+[x] 13
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 5
+[code] 
+  mov x0 acc
+  teq acc 1
++ mov 1 x1
+- mov 0 x1
+  teq acc 2
++ mov 1 x2
+- mov 0 x2
+  teq acc 3
++ mov 1 x3
+- mov 0 x3
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 5
+[code] 
+  slx x0
+  teq x0 1
++ teq acc 0
++ mov p1 x1
++ mov x2 x1
++ add x3
+  tgt acc 0
++ sub 1
+
+[chip] 
+[type] DIAL13
+[x] 13
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL10
+[x] 13
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] SWITCH16
+[x] 13
+[y] 7
+[is-puzzle-provided] true
+

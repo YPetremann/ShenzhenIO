@@ -1,0 +1,63 @@
+[name] New design 1 (Copy) (Copy)
+[puzzle] Sz014
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+....15555555C..154....
+....8......16.954.....
+....A......154A154....
+....355554..94354.....
+............355554....
+......................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 4
+[code] 
+  teq p1 100
++ mov 0 acc
++ mov 1 dat
+  teq p0 100
++ mov acc x3
++ mov 0 dat
+  teq dat 1
++ add 1
+slp 1
+
+[chip] 
+[type] UC4
+[x] 13
+[y] 4
+[code] 
+  slx x0
+  mov x0 acc
+  tlt acc 3
++ mov 100 p0
+- mov 0 p0
+- tgt acc 4
+- mov 100 p1
++ mov 0 p1
+  mov acc x1
+
+[chip] 
+[type] UC4
+[x] 13
+[y] 6
+[code] 
+  slx x1
+  mov x1 acc
+  mov 0 p1
+  tgt acc 2
++ mov 50 p1
+  tgt acc 4
++ mov 100 p1
+  slp 1
+

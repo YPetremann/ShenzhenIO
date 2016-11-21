@@ -1,0 +1,75 @@
+[name] New design 1
+[puzzle] Sz021
+[production-cost] 1300
+[power-usage] 536
+[lines-of-code] 18
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+.............94.......
+...1555C954..34.......
+.......AA94.154.1C....
+......16AA..1C..16....
+...14.15EA...A..1C....
+......156A...35556....
+......1556............
+......................
+......................
+
+[chip] 
+[type] RAM
+[x] 4
+[y] 2
+
+[chip] 
+[type] UC4
+[x] 4
+[y] 4
+[code] 
+  mov p1 x1
+  mov p0 x1
+  slp 1
+
+[chip] 
+[type] RADIO
+[x] 14
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 5
+[code] 
+  slx x3 
+  mov x1 acc
+  teq x3 1
+- add 1
+  mov acc x1
+  mov x1 dat
+  add 2
+  mov acc x1
+L:teq dat x1
+- mov x0 x2
+- mov x0 acc
+- jmp L
+
+[chip] 
+[type] UC4X
+[x] 14
+[y] 6
+[code] 
+  teq x2 x0
++ mov x2 x1
+  slp 1
+
+[chip] 
+[type] ID
+[x] 14
+[y] 8
+[is-puzzle-provided] true
+

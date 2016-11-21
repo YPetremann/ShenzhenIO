@@ -1,0 +1,82 @@
+[name] New design 1
+[puzzle] Sz012
+[production-cost] 1500
+[power-usage] 897
+[lines-of-code] 31
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..8...954.............
+..A...2...15C.........
+..35555D4.1CB554......
+......8A...AA.........
+..8..16A..16A.........
+..34...34.156.........
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 2
+[code] 
+  teq 100 p0
++ teq 1 dat
++ mov 2 x3
++ mov x3 dat
++ jmp E
+  teq 100 p0
++ teq 0 dat
++ mov 1 dat
++ mov 1 x3
+  teq 0 p0
++ teq 1 dat
++ mov 1 x3
+E:slp 1
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 2
+[code] 
+  slx x3
+  mov x3 dat
+  mov p0 acc
+  sub dat
+  mov acc x2
+
+[chip] 
+[type] LCDN
+[x] 15
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] BRIDGE
+[x] 6
+[y] 4
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 5
+[code] 
+  slx x0
+  mov x0 acc
+  teq 2 acc
++ teq 0 dat
++ teq 0 p0
++ mov 0 x0
++ mov -999 x3
++ jmp E
+  teq 2 acc
++ mov p0 dat
++ mov 1 x0
+  mov dat x2
+E:slp 1
+

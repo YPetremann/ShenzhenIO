@@ -1,0 +1,136 @@
+[name] New design 2
+[puzzle] Sz041
+[production-cost] 2800
+[power-usage] 1314
+[lines-of-code] 63
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+...1555554............
+..155555C..15554..1C..
+...1495434.14.155C.2..
+..1C.A....954..14354..
+..834A14.1694..15C14..
+..3556.....355554A94..
+.................22...
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 3
+[code] 
+E:slx x1
+  mov x1 dat
+  teq dat 0
++ mov 4 x3
++ jmp E
+  tlt dat 4
++ mov 2 x3
++ jmp E
+  tlt dat 9
++ mov 1 x3
+- mov -2 x3
+
+[chip] 
+[type] UC6
+[x] 16
+[y] 3
+[code] 
+  mov x0 dat
+  tgt dat 0
+- jmp E
+  teq dat 8
++ mov 4 acc
+L:mov p0 x3
+  mov x3 x1
+  mov p1 x3
+  mov x3 x2
++ sub 1
++ slp 1
+E:slp 1
++ tgt acc 0
++ jmp L
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 4
+[code] 
+  slx x0
+  mov x0 null
+  mov p0 acc
+  sub 50
+  mul acc
+  mov acc dat
+  mov p1 acc
+  sub 50
+  mul acc
+  add dat
+  dgt 2
+  mov acc x2
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 4
+[code] 
+  slx x0
+  mov x0 dat
+  teq dat 1
++ mov 8 p1
+- teq dat 5
++ mov 8 acc
+  add x1
+  tlt dat 5
++ mov acc p0
+- mov acc p1
+  mov null x0
+
+[chip] 
+[type] BRIDGE
+[x] 19
+[y] 4
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 5
+
+[chip] 
+[type] BRIDGE
+[x] 3
+[y] 6
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 6
+[code] 
+  teq p0 0
++ jmp E
+  mov null x0
+  add 1
+  mov acc x2
+  mov x2 null
+  tlt acc 8
+E:mov acc x3
+- mov 0 acc
+- slp 7
+  slp 1
+
+[chip] 
+[type] UC4X
+[x] 16
+[y] 7
+[code] 
+  slx x2
+  mov x2 acc
+  sub 8
+  mov acc x2
+

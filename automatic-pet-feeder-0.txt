@@ -1,0 +1,158 @@
+[name] New design 1
+[puzzle] Sz040
+[production-cost] 2300
+[power-usage] 1328
+[lines-of-code] 42
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+....95555555555C......
+..14A...954.14.A......
+..94A155694.14.A......
+..A.A155C2..14.A......
+..34A14.354.14.34.14..
+..15614..14.14.94..8..
+.....14.....14.35556..
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 2
+[code] 
+  slx x0
+  teq x0 1
++ teq acc 0
++ mov p1 x1
++ mov x2 x1
++ add x3
+  tgt acc 0
++ sub 1
+
+[chip] 
+[type] DIAL11
+[x] 6
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 2
+[code] 
+  slx x0
+  teq x0 1
++ teq acc 0
++ mov p1 x1
++ mov x2 x1
++ add x3
+  tgt acc 0
++ sub 1
+
+[chip] 
+[type] DIAL12
+[x] 13
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL8
+[x] 6
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 3
+
+[chip] 
+[type] DIAL9
+[x] 13
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 3
+[code] 
+  slx x0
+  teq x0 0
++ mov x0 p0
+- mov x0 p1
+  slp 1
++ mov 0 p0
+- mov 0 p1
+
+[chip] 
+[type] SWITCH14
+[x] 6
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] SWITCH15
+[x] 13
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 5
+[code] 
+  mov x0 acc
+  teq acc 1
++ mov 1 x1
+- mov 0 x1
+  teq acc 2
++ mov 1 x2
+- mov 0 x2
+  teq acc 3
++ mov 1 x3
+- mov 0 x3
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 5
+[code] 
+  slx x0
+  teq x0 1
++ teq acc 0
++ mov p1 x1
++ mov x2 x1
++ add x3
+  tgt acc 0
++ sub 1
+
+[chip] 
+[type] DIAL13
+[x] 13
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 6
+
+[chip] 
+[type] DIAL10
+[x] 13
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] SWITCH16
+[x] 13
+[y] 7
+[is-puzzle-provided] true
+

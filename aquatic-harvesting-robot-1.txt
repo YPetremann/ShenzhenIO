@@ -1,0 +1,198 @@
+[name] New design 1
+[puzzle] Sz042
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+............9554.1C...
+..94.15C14.16.155CA...
+..A9554355C14954.A34..
+..2A954.14B54A15C35C..
+..16A.9554A1435435C2..
+..14A16...A14.154.34..
+....354...3555554.....
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 2
+[code] 
+  mov x1 acc
+  teq acc -999
++ jmp E
+  dst 1 x1
+  mov 0 x2
+L:teq x0 0
+- jmp L
+  mov acc dat
+  mov x2 acc
+  sub 1
+  mov acc x2
+  mov dat x0
+E:mov null x3
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 16
+[y] 2
+[code] 
+  slx x1
+  mov x1 acc
+  dgt 1
+  mov acc dat
+  mov p0 acc
+  dgt 1
+  sub dat
+  mul acc
+  mov x1 acc
+  tgt dat acc
++ mov dat x3
++ mov dat x3
+- mov acc x3
+- mov acc x3
+
+[chip] 
+[type] BRIDGE
+[x] 2
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 3
+[code] 
+E:slx x0
+  mov x0 acc
+  teq acc 0
++ mov -1 x3
+- mov acc x3
+- mov acc x2
+- dgt 0
+- mov acc dat
+- mov p1 acc
+- dgt 0
+- sub dat
+- mul acc
+- mov acc x2
+
+[chip] 
+[type] UC4X
+[x] 12
+[y] 3
+[code] 
+  slx x0
+  mov x0 acc
+  teq acc -1
++ jmp E
+  mov acc x3
+  mov x1 x2
+  mov x1 x2
+E:mov acc x3
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 4
+[code] 
+  mov x2 null
+  mov 0 x1
+L:mov x0 acc
+  tcp acc 0
++ teq acc p1
++ mov x1 acc
++ sub 1
++ mov acc x1
++ mov 0 x0
+- mov acc x3
+E:tlt x1 6
++ jmp L
+  mov 0 x3
+  slp 1
+
+[chip] 
+[type] RAM
+[x] 3
+[y] 5
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 5
+[code] 
+  mov 999 dat
+  mov p0 acc
+L:teq x3 -1
++ jmp E
+  tlt x2 dat
++ mov x2 dat
++ mov x3 acc
+- mov x2 null
+- mov x3 null
+  jmp L
+E:mov acc x1
+  dst 0 0
+  mov acc x1
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 6
+[code] 
+  mov x2 acc
+  dgt 0
+  mov acc dat
+  mov p0 acc
+  dgt 0
+  sub dat
+  mov acc x1
+  mov acc x3
+  mov p0 acc
+  dst 0 0
+  sub x2
+  mov acc x1
+  mov acc x3
+  slp 1
+
+[chip] 
+[type] RADIO
+[x] 3
+[y] 7
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 6
+[y] 7
+[code] 
+  tcp x1 0
++ sub 1
+- add 1
+  tcp x1 0
++ sub 10
+- add 10
+  mov acc p0
+  slp 1
+
+[chip] 
+[type] UC4
+[x] 15
+[y] 7
+[code] 
+  tcp x0 0
+  mov 50 p1
++ mov 0 p1
+- mov 100 p1
+  tcp x0 0
+  mov 50 p0
++ mov 0 p0
+- mov 100 p0
+  slp 1
+

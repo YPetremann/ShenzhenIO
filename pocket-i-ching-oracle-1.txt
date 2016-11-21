@@ -1,0 +1,89 @@
+[name] New design 1 (Copy)
+[puzzle] Sz017
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..............14......
+....9555C.....14......
+....A..1694.1414......
+....A..1CA..1414......
+....A..1634...14......
+....A..1554...14......
+....34................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 2
+[code] 
+  teq p0 100
+- jmp E
+L:mov 1  x3
+  mov x3 acc
+  teq p1 100
++ dst x3 1
+- dst x3 0
+  mov acc x3
+  teq x3 0
++ slp 1
++ jmp L
+E:slp 1
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 2
+[code] 
+  slx x1
+  teq x1 1
+  mov dat x1
+  mov acc x1
+  mov x1 dat
+  teq acc 2
++ mov dat x0
++ mov x0 x1
++ mov -1 acc
+- mov 0 x1
+  add 1
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 3
+
+[chip] 
+[type] LCDH
+[x] 15
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] ORACLE
+[x] 5
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4X
+[x] 10
+[y] 5
+[code] 
+  slx x0
+  mov x0 acc
+  mov 0 x0
+  slx x0
+  mov acc x2
+  mov x0 x3
+  mov 1 x0
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 6
+

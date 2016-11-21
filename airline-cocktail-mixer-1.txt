@@ -1,0 +1,92 @@
+[name] New design 1 (Copy)
+[puzzle] Sz020
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+.......954.154....14..
+.......A94.154.15414..
+.......22......1C.14..
+..155555555554..A.....
+.......88....155E.14..
+.......A355554.16.14..
+.......3555554.15414..
+......................
+......................
+
+[chip] 
+[type] UC4X
+[x] 13
+[y] 2
+[code] 
+  slx x3
+  mov x3 acc
+  add 1
+  mov acc x1
+  mov x0 x2
+  slp 2
+  teq acc 7
++ slp 2
+  mov 0 x2
+
+[chip] 
+[type] DX3
+[x] 17
+[y] 2
+
+[chip] 
+[type] BRIDGE
+[x] 7
+[y] 4
+
+[chip] 
+[type] BRIDGE
+[x] 8
+[y] 4
+
+[chip] 
+[type] UC4
+[x] 13
+[y] 4
+[code] 
+  slx x0
+  mov x0 acc
+  sub 1
+  add acc
+  mov acc x1
+  mov acc x1
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 6
+[code] 
+  slx x2
+  mov x2 dat
+  teq dat 2
++ mov 101 acc
++ mov acc x3
++ slp 2
+  tgt dat 9
++ mov 10 acc
+- mov 100 acc
+  mov dat x1
+  mov acc x3
+  slp x0
+  mov 0 x3
+
+[chip] 
+[type] DX3
+[x] 17
+[y] 6
+
+[chip] 
+[type] BANK
+[x] 9
+[y] 7
+[rom] 
+3,0,4,0,4,110,4,10,6,1,6,100,6,1
+

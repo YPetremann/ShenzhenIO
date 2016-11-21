@@ -1,0 +1,53 @@
+[name] New design 1
+[puzzle] Sz036
+[production-cost] 500
+[power-usage] 332
+[lines-of-code] 14
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..155555C.............
+..15C..16.............
+...8A..15555554.......
+..16B4................
+..156.................
+......................
+......................
+......................
+
+[chip] 
+[type] LCDT
+[x] 14
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 4
+[code] 
+  slp 1
+  tgt dat p1
++ mov -1 x3
++ mov -2 x3
++ mov 0 dat
+  teq p0 100
+- tgt p1 dat
++ add 1
++ mov acc x3
++ teq acc 15
++ slp 1
++ mov -15 x3
++ mov 14 acc
+  mov p1 dat
+
+[chip] 
+[type] BRIDGE
+[x] 3
+[y] 5
+

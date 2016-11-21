@@ -1,0 +1,83 @@
+[name] New design 1 (Copy)
+[puzzle] Sz024
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+.....9D54.............
+.....2A9415555554.....
+.....9EA.1554.........
+.....2A3415541554.....
+.....96......15C......
+.....2...15555568.....
+.........15555556.....
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 2
+[code] 
+  slx x3
+  mov x3 acc
+  mov acc x2
+  mov x3 acc
+  mov acc x2
+L:
+  teq acc 0
+- sub 1
+- mov x3 x2
+- jmp L
+E:
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 4
+[code] 
+  slx x0
+  mov x0 acc  
+  teq acc x1
+- mov acc x2
+- jmp E
+  mov acc x3
+  mov x0 acc
+  mov acc x3
+L:
+  teq acc 0
+- sub 1
+- mov x0 x3
+- jmp L
+E:
+
+[chip] 
+[type] ID
+[x] 8
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 6
+[code] 
+  slx x0
+  mov x0 acc
+  tgt acc x1
+- mov acc x2
+- jmp E
+  mov acc x3
+  mov x0 acc
+  mov acc x3
+L:
+  teq acc 0
+- sub 1
+- mov x0 x3
+- jmp L
+E:
+

@@ -1,0 +1,99 @@
+[name] New design 1 (Copy) (Copy)
+[puzzle] Sz031
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..955555C.............
+..355C..A......954....
+.....A14A14.154A155C..
+..954A14A14..94354.2..
+..A156..355556..1C....
+..354.155555555556....
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 4
+[y] 2
+[code] 
+  slx x0
+  teq p0 0
++ mov 1 x1
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 14
+[y] 3
+[code] 
+  slx x2
+  teq x2 1
+  mov 0 dat
+  mov 1 x0
+L:mov x1 acc
+  mov acc x3
+  teq x0 acc
+- mov 1 dat
+  teq x0 10
+- jmp L
+  teq x3 0
++ gen p1 6 0
+  teq dat 0
++ gen p1 6 0
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 4
+[code] 
+  teq p0 100
+- jmp E
+  slx x0
+  mov 0 x3
+L:teq x3 10
+- mov x0 x2
+- jmp L
+M:teq p0 100
++ slp 1
++ jmp M
+E:slp 1
+
+[chip] 
+[type] RAM
+[x] 7
+[y] 4
+
+[chip] 
+[type] UC4X
+[x] 10
+[y] 4
+[code] 
+  slx x3
+  teq x3 1
+  mov 0 x1
+L:teq x1 10
+- mov x0 x3
+- mov x1 x3
+- jmp L
+
+[chip] 
+[type] UC6
+[x] 14
+[y] 6
+[code] 
+  slx x2
+  mov 0 dat
+  mov 0 acc
+L:teq x2 9
+- mov 1 dat
+  add 1
+  teq acc 10
++ mov dat x2
+- jmp L
+

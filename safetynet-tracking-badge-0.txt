@@ -1,0 +1,89 @@
+[name] New design 1
+[puzzle] Sz027
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..95555C....9555C.....
+..2..15E..156...34....
+..8..1C34.1D54.154....
+..34..35555694.14..8..
+............35555556..
+......................
+......................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 5
+[code] 
+  teq p0 0
++ jmp Z
+  tgt p0 79
++ mov 100 x3
++ jmp Z
+  teq p1 0
++ mov 600 x3
++ jmp Z
+  tlt p0 51
++ mov 700 x3
++ jmp Z
+  mov 200 x3
+Z:slp 1
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 5
+[code] 
+@ mov 50 p0
+x:tcp x3 1
+- slp 1
+- jmp x
++ jmp z
+  mov x3 acc
+y:mov x3 p0
+  sub 1
+  slp 1
+  teq acc 0
+- jmp y
++ mov 50 p0
+z:teq x2 x3
++ mov -1 x1
+
+[chip] 
+[type] ID
+[x] 16
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 6
+[code] 
+x:slx x2
+  mov x2 dat
+  teq dat -1
++ mov acc x3
++ jmp x
+  teq 200 dat
++ mov p0 acc
++ mul 4
++ dgt 2
++ add dat
++ jmp x
+  mov dat acc
+
+[chip] 
+[type] RADIO
+[x] 17
+[y] 6
+[rotated] true
+[is-puzzle-provided] true
+

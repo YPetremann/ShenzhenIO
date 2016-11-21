@@ -1,0 +1,124 @@
+[name] New design 1 (Copy)
+[puzzle] Sz013
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+....155555555554......
+..1554..9554155C.15C..
+....14.16.9415CA.1CA..
+..14...1556...A2..A2..
+..14..........B5556...
+..1414.14.14.168......
+.............156......
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 2
+[code] 
+  teq x1 0
++ jmp E
+  mov x1 dat
+  mov dat acc
+  dgt 0
+  mov acc x3
+  mov dat acc
+  dgt 1
+  mov acc x3
+  mov dat acc
+  dgt 2
+  mov acc x3
+E:slp 1
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 2
+[code] 
+  slx x1
+  mov x1 acc
+  mul 20
+  mov acc x3
+  mov x1 acc
+  mul 50
+  mov acc x3
+  mov x1 acc
+  mul 100
+  mov acc x3
+
+[chip] 
+[type] UC6
+[x] 11
+[y] 2
+[code] 
+  slx x1
+  mov 8 x3
+  mov x2 acc
+  add x1
+  add x1
+  add x1
+  mov 8 x3
+  mov acc x2
+
+[chip] 
+[type] DX3
+[x] 3
+[y] 3
+[rotated] true
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 5
+[code] 
+  mov x0 acc
+  tcp acc -1
+- jmp E
+  teq acc -1
++ mov 1 x1
++ jmp E
+  mov 0 x3
+  mov acc x2
+L:
+  teq x3 8
+- mov x0 x2
+- jmp L
+E:
+  slp 1
+
+[chip] 
+[type] BRIDGE
+[x] 4
+[y] 6
+
+[chip] 
+[type] RAM
+[x] 11
+[y] 6
+
+[chip] 
+[type] UC6
+[x] 15
+[y] 6
+[code] 
+  slx x0
+  mov 0 x2
+L:
+  teq x2 9
+- mov x1 x3
+- jmp L
+  mov 8 x2
+  mov 0 x1
+  teq x0 1
+

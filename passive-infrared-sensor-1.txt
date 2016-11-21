@@ -1,0 +1,67 @@
+[name] POWER USAGE
+[puzzle] Sz005
+[production-cost] 700
+[power-usage] 362
+[lines-of-code] 9
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......94..............
+......34.154..........
+......94.1C...........
+....8.A.156...........
+....A.355541555554....
+....A....14...........
+....3554..............
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 7
+[y] 2
+[code] 
+  tlt p0  20
+- mov 100 p1
++ mov 0   p1
+  slp 1
+
+[chip] 
+[type] AND
+[x] 10
+[y] 3
+
+[chip] 
+[type] DIAL2
+[x] 7
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 7
+[y] 6
+[code] 
+  teq p1  x0
++ mov 100 p0
+  teq p1  x1
++ mov 0   p0
+  slp 1
+
+[chip] 
+[type] RTC
+[x] 11
+[y] 6
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL1
+[x] 7
+[y] 8
+[is-puzzle-provided] true
+

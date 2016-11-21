@@ -1,0 +1,105 @@
+[name] New design 1 (Copy)
+[puzzle] Sz022
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+....954...............
+..956955555555554.14..
+..3496155D55555C......
+..94A14..A.....35414..
+..2.A14..A........14..
+..14354..354154...14..
+..14.1555554154.......
+......................
+......................
+
+[chip] 
+[type] BRIDGE
+[x] 2
+[y] 2
+
+[chip] 
+[type] UC4X
+[x] 3
+[y] 2
+[code] 
+  slx x0
+  mov x0 acc
+  teq acc 1
++ mov 1 x1
+  teq acc 2
++ mov 1 x2
+  teq acc 3
++ mov 2 x1
+  mov 1 x3
+
+[chip] 
+[type] UC4X
+[x] 10
+[y] 2
+[code] 
+  slx x1
+  teq x1 1
+  mov 0 x3
+L:teq x3 7
+- mov x2 x0
+- slp 1
+- jmp L
+  mov 0 x0
+
+[chip] 
+[type] BANK
+[x] 14
+[y] 2
+[rom] 
+0,10,10,0,10,10,0,0,0,0,0,0,0,0
+
+[chip] 
+[type] DX3
+[x] 17
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 4
+[code] 
+  slx x1
+  mov x1 dat
+  teq dat 1
++ mov 0 x3
+  teq dat 2
++ mov 7 x3
+  mov 0 acc
+L:teq acc 7
+- add 1
+- mov x2 x0
+- slp 1
+- jmp L
+  mov 0 x0
+
+[chip] 
+[type] BANK
+[x] 6
+[y] 4
+[rom] 
+111,0,101,0,101,0,111,11,11,11,11,11,11,11
+
+[chip] 
+[type] BRIDGE
+[x] 6
+[y] 6
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 6
+[code] 
+  slx x0
+  teq x0 1
+  gen p1 7 0
+

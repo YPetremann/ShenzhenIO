@@ -1,0 +1,94 @@
+[name] New design 1
+[puzzle] Sz039
+[production-cost] 1800
+[power-usage] 1590
+[lines-of-code] 41
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......1555554.........
+..954.154..94.........
+..34.1C...16..........
+......A...1555554.....
+..94..A...............
+..A.956...............
+..2.2.................
+......................
+......................
+
+[chip] 
+[type] LCDN
+[x] 15
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 4
+[code] 
+  mov x0 dat
+  teq p0 100
+- jmp 1
+  tlt acc 20
++ add 10
+- sub 10
+1:teq p1 100
++ teq acc 10
+- jmp 2
+  teq dat 0
++ sub 10
+- mov 30 x0
+2:mov acc x0
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 5
+[code] 
+  mov acc x0
+  mov x0 dat
+  mov dat x3
+  tgt dat 0
+  mov x3 acc
++ mov acc x2
+- mov -999 x2
+E:slp 1
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 6
+[code] 
+  teq x0 30
++ mov 0 dat
++ mov 0 acc
+  teq x1 20
+  mov acc x1
+- jmp E
+  teq dat 0
++ mov 1 dat
+- mov 0 dat
+- add 1
+E:
+  slp 1
+
+[chip] 
+[type] UC4X
+[x] 4
+[y] 7
+[code] 
+  mov x2  x1 
+  mov x1  acc
+  teq acc 30
++ mov 30  x3
++ mov x1  x2
+- mov 0   x3
+- mov acc x2
+  slp 1
+

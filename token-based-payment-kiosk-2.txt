@@ -1,0 +1,84 @@
+[name] New design 1 (Copy) (Copy)
+[puzzle] Sz009
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+............9555554...
+...1414.....A.........
+...14...14156.........
+...14...141554.1414...
+.................14...
+......................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 3
+[code] 
+  slx x0
+  add x0
+  tlt acc x1
+- sub x1
+- mov acc x3
+- mov 0 acc
+- gen p1 4 0
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 3
+[code] 
+E:slx x1
+  mov x1 acc
+L:teq acc 0
++ jmp E
+  tgt acc 4
++ sub 5
++ mov 10 x3
+- sub 1
+- mov 1 x3
+  slp 1
+  mov 0 x3
+  slp 1
+  jmp L
+
+[chip] 
+[type] DX3
+[x] 16
+[y] 3
+
+[chip] 
+[type] DX3
+[x] 4
+[y] 4
+[rotated] true
+
+[chip] 
+[type] DIAL3
+[x] 7
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4X
+[x] 6
+[y] 5
+[code] 
+  teq x0 0
++ jmp E
+  teq x0 1
++ mov 1  x2
+  teq x0 10
++ mov 5  x2
+  teq x0 100
++ mov 12 x2
+E:slp 1
+

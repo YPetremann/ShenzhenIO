@@ -1,0 +1,83 @@
+[name] New design 1 (Copy)
+[puzzle] Sz019
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+...94.155555C.........
+...A..14....A1555C....
+...A..14.154A15C.A....
+...2......14A1CA.2....
+.........15C356A......
+.........1435556......
+......................
+......................
+
+[chip] 
+[type] NLP
+[x] 7
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] BRIDGE
+[x] 10
+[y] 2
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 4
+[code] 
+0:slx x3
+  mov x3 acc
+  mov x3 dat
+  mov 0 x1
+L:teq x0 acc
+- jmp 1
+  teq x0 dat
+- jmp 2
+  mov 1 x3
+  jmp 0
+1:teq x0 0
+2:teq x1 12
+- jmp L
+  mov 0 x3
+
+[chip] 
+[type] UC6
+[x] 11
+[y] 4
+[code] 
+  mov x3 acc
+  teq acc -999
++ jmp E
+  mov acc x1
+  mov x3 x1
+  teq x1 1
++ mov 50 p1
++ slx x2
++ teq x2 0
+E:mov p0 p1
+  slp 1
+
+[chip] 
+[type] BANK
+[x] 4
+[y] 5
+[rom] 
+711,573,495,160,575,645,712,917,356,361,138,420,0,0
+
+[chip] 
+[type] UC4
+[x] 4
+[y] 7
+[code] 
+  teq p0 100
++ mov 0 x1
+  slp 1
+

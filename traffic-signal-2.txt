@@ -1,0 +1,119 @@
+[name] New design 1 (Copy) (Copy)
+[puzzle] Sz026
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+........94............
+........A.........8...
+........34..94.1416...
+...154.154.16....14...
+...........154...1C...
+............14.14.2...
+...............14.....
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 2
+[code] 
+  slx x0
+  mov x0 acc
+  teq acc 0
++ mov x1 x0
+  teq acc 1
++ mov x2 x0
+  teq acc 2
++ mov x3 x0
+  teq acc -1
++mov 0 x0
+
+[chip] 
+[type] DIAL5
+[x] 16
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL4
+[x] 11
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL6
+[x] 16
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 4
+[code] 
+  slx x1
+  mov x1 dat
+  teq acc 0
++ mov dat x2
++ mov x2 acc
+  sub 1
+  mov dat x3
+  teq acc 0
++ mov dat x0
++ mov x0 dat
+  mov dat x1
+  teq dat -1
++ mov 0 acc
+  slp 1
+
+[chip] 
+[type] DX3
+[x] 16
+[y] 4
+
+[chip] 
+[type] UC4
+[x] 5
+[y] 5
+[code] 
+  teq p0 100
++ mov -1 x1
++ mov x1 acc
++ mov 0 acc
+- mov acc x1
+- mov x1 acc
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 5
+[code] 
+  slx x1
+  mov x1 acc
+  teq acc 0
++ mov 100 x3
+  teq acc 1
++ mov 10 x3
+  teq acc 2
++ mov 1 x3
+  teq acc -1
++ mov 0 x3
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 7
+[code] 
+  slx x0
+  mov x0 acc
+  add 1
+  teq acc 3
++ mov 0 x0
+- mov acc x0
+
