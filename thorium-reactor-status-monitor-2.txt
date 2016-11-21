@@ -8,20 +8,84 @@
 ......................
 ......................
 ..14..................
-.....15555555C........
-.............A........
-.............34.......
+.....155C.............
+..155554A.............
+..1555C.B5555554......
+......2.A.............
+.....1556.............
+..14..14..............
 ......................
-.......0..............
 ......................
-......................
-......................
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 2
+[code] 
+  tcp p0  50
+  mov -30 x3
+  mov 31  x3
+  mov 32  x3
+  mov 33  x3
+  mov -34 x3
++ mov 30  x3
++ mov -33 x3
++ mov -34 x3
+- mov -30 x3
+- mov -31 x3
+- mov 34 x3
+  slp 1
+
+[chip] 
+[type] BRIDGE
+[x] 6
+[y] 2
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 2
+[code] 
+  mov p0 acc
+  mul 5
+  dgt 2
+  add 20
+  mov acc dat
+  mov 20 acc
+0:tgt acc dat
++ mul -1
+  mov acc x1
++ mul -1
+  add 1
+  teq acc 25
+- jmp 0
+1:slp 1
 
 [chip] 
 [type] LCDR
 [x] 14
 [y] 2
 [is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 6
+[code] 
+  mov p0 acc
+  mul 5
+  dgt 2
+  add 10
+  mov acc dat
+  mov 10 acc
+0:tgt acc dat
++ mul -1
+  mov acc x1
++ mul -1
+  add 1
+  teq acc 15
+- jmp 0
+1:slp 1
 
 [chip] 
 [type] UC4
