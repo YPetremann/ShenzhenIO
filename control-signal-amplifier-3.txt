@@ -1,0 +1,64 @@
+[name] low power & low lines of Code
+[puzzle] Sz030
+[production-cost] 400
+[power-usage] 133
+[lines-of-code] 3
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+...........1C.........
+.......1D4..A.........
+........341574........
+......................
+......................
+......................
+......................
+......................
+
+[chip] 
+[type] NOTE
+[x] 9
+[y] 2
+[code] 
+the OR gate clamps
+our input as
+follows:
+
+0  => 0
+25 => 0
+50 => 100
+
+
+[chip] 
+[type] OR
+[x] 9
+[y] 4
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 6
+[code] 
+  tgt p0 p1
++ mov 50 p1
+  slp 1
+
+[chip] 
+[type] NOTE
+[x] 9
+[y] 8
+[code] 
+MC only has to
+worry about 25=>50
+
+The 'tgt' both
+checks for 25
+and clears p1
+if we were sending
+50 previously.
+
