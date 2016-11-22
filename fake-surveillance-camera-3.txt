@@ -1,4 +1,4 @@
-[name] low power
+[name] (P) Pwarmboe
 [puzzle] Sz000
 [production-cost] 600
 [power-usage] 57
