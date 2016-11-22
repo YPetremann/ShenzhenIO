@@ -1,0 +1,58 @@
+[name] (CP) CaitSith2
+[puzzle] Sz010
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......................
+........15555554......
+....154.14.15554......
+.....94.......94......
+.....3555555556.......
+......................
+......................
+......................
+
+[chip] 
+[type] RADIO
+[x] 2
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 4
+[code] 
+@ slp 1
+  mov x1 dat
+  teq dat -999
+- mov dat p1
+- mov x1 x3
+- mov x1 p0
+- mov x1 acc
+- teq acc 999
+- slp acc
+- tgt p0 p1
+- mov 0 x3
+- slp 2
++ slp 1
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 4
+[code] 
+t:slx x0  
+  mov x0 p1
+
+[chip] 
+[type] LEDRGBV
+[x] 15
+[y] 4
+[is-puzzle-provided] true
+
