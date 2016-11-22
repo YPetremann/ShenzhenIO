@@ -1,4 +1,4 @@
-[name] PRODUCTION COST
+[name] (YPLD) Thaui
 [puzzle] Sz028
 [production-cost] 300
 [power-usage] 248
