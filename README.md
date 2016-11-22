@@ -20,18 +20,18 @@ Laser Tag Equipment          | 0 Thaui 7/399/13 | 1 Thaui 12/341/8    | 1 Thaui 
 
 Pull requests are accepted and encouraged.
 
-Keep files organised and explain in design title the aim of the design, 
+Keep files organised and put in design name the aim and your name using the corresponding format : ** (_Aim Letters_) _Name_** 
 
 There is 4 main points :
- * Fewer Production Cost
- * Fewer Power Usage
- * Fewer Lines Of Code
- * Pretiest :
+ * Fewer Production Cost (C)
+ * Fewer Power Usage (P)
+ * Fewer Lines Of Code (L)
+ * Prettiest Design (D):
    * Easy to understand
    * Minimal wire path
    * Wire goes less under chips
    * code formating
-   * design pattern (please explain if you use something really specific)
+   * design pattern (please explain using notes or in commit message if you use something really specific)
  
 Improving a design can be done on the same file if it keep the idea.
 
