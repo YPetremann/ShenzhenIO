@@ -1,8 +1,8 @@
 [name] LINES OF CODE
 [puzzle] Sz005
 [production-cost] 700
-[power-usage] 362
-[lines-of-code] 9
+[power-usage] 447
+[lines-of-code] 8
 
 [traces] 
 ......................
@@ -10,58 +10,56 @@
 ......................
 ......................
 ......................
-......94..............
-......34.154..........
-......94.1C...........
-....8.A.156...........
-....A.355541555554....
-....A....14...........
-....3554..............
+......................
+........14.155C.......
+......1554.14.341C....
+....8......15554.A....
+....355554.......2....
+......................
+......................
 ......................
 ......................
 
 [chip] 
 [type] UC4
-[x] 7
-[y] 2
+[x] 9
+[y] 4
 [code] 
   tlt p0  20
-- mov 100 p1
-+ mov 0   p1
-  slp 1
+- gen p1  1 0
++ slp 1
 
 [chip] 
 [type] AND
-[x] 10
-[y] 3
+[x] 15
+[y] 5
+
+[chip] 
+[type] RTC
+[x] 4
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 6
+[code] 
+  teq p0  x0
++ mov 0   p1
+  teq p0  x1
++ mov 100 p1
+  slp 1
+
+[chip] 
+[type] DIAL1
+[x] 12
+[y] 6
+[is-puzzle-provided] true
 
 [chip] 
 [type] DIAL2
 [x] 7
-[y] 5
-[is-puzzle-provided] true
-
-[chip] 
-[type] UC4
-[x] 7
-[y] 6
-[code] 
-  teq p1  x0
-+ mov 100 p0
-  teq p1  x1
-+ mov 0   p0
-  slp 1
-
-[chip] 
-[type] RTC
-[x] 11
-[y] 6
-[rotated] true
-[is-puzzle-provided] true
-
-[chip] 
-[type] DIAL1
-[x] 7
-[y] 8
+[y] 7
 [is-puzzle-provided] true
 

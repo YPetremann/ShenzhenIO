@@ -1,8 +1,8 @@
-[name] New design 1 (Copy) (Copy)
+[name] LINES OF CODE
 [puzzle] Sz048
-[production-cost] 1000
-[power-usage] 462
-[lines-of-code] 16
+[production-cost] 900
+[power-usage] 341
+[lines-of-code] 8
 
 [traces] 
 ......................
@@ -11,57 +11,50 @@
 ......................
 ......................
 ......................
-..............954.....
-..1541554.....A..154..
-..154.94.155416..154..
-..1D4.B555554155415C..
-...3556............2..
+......................
+..14.........1555554..
+..14...14.14.1555554..
+..8..1D54.154.........
+..35556....155555554..
 ......................
 ......................
 ......................
 
 [chip] 
-[type] DX3
-[x] 4
-[y] 4
-[rotated] true
-
-[chip] 
-[type] UC6
+[type] BRIDGE
 [x] 11
-[y] 4
-[code] 
-  teq x2 010
-+ mov x3 acc
-  teq x2 100
-+ tgt acc 0
-+ teq p0 100
-+ sub 1
-+ mov 1 x2
-  slp 1
-+ mov 0 x2
+[y] 3
 
 [chip] 
-[type] DX3
-[x] 16
+[type] PGA
+[x] 3
 [y] 4
+[array-switch] False
+[array-data] 
+0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 
 [chip] 
 [type] UC4
-[x] 7
-[y] 5
+[x] 8
+[y] 4
 [code] 
-  teq x0 101
-+ mov 0 acc
-+ mov 0 p0
-  teq x0 010
-+ mov 100 acc
-+ mov 100 p0
-  slp 1
+  teq x1 010
++ mov x0 acc
+  teq x1 100
++ tgt acc 0
++ teq p0 100
++ sub 1
++ gen p1 1 0
+- slp 1
+
+[chip] 
+[type] DX3
+[x] 12
+[y] 4
 
 [chip] 
 [type] DIAL7
-[x] 16
-[y] 7
+[x] 6
+[y] 5
 [is-puzzle-provided] true
 
