@@ -1,0 +1,94 @@
+[name] (LD) Twarmboe, Thaui
+[puzzle] Sz048
+[production-cost] 800
+[power-usage] 198
+[lines-of-code] 6
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+............9555555C..
+............34.....A..
+..1554141D55541C...2..
+..155414.A.14.16.154..
+..15D4...A.94.154.....
+....3555560355555554..
+......................
+......................
+......................
+
+[chip] 
+[type] OR
+[x] 5
+[y] 4
+
+[chip] 
+[type] UC4
+[x] 12
+[y] 4
+[code] 
+  teq x1 0
+- mov x0 acc
++ tlt p1 acc
++ gen p0 1 1
++ sub 1
+- slp 1
+
+[chip] 
+[type] DX3
+[x] 16
+[y] 4
+
+[chip] 
+[type] AND
+[x] 7
+[y] 5
+
+[chip] 
+[type] DIAL7
+[x] 10
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] NOT
+[x] 5
+[y] 6
+
+[chip] 
+[type] AND
+[x] 13
+[y] 6
+
+[chip] 
+[type] NOTE
+[x] 6
+[y] 8
+[code] 
+SR Latch takes
+care of our
+alive state
+without need of
+an MC
+
+[chip] 
+[type] NOTE
+[x] 11
+[y] 8
+[code] 
+AND gate only
+allows a shot
+while alive and
+pulling trigger
+
+[chip] 
+[type] NOTE
+[x] 16
+[y] 8
+[code] 
+DX300 only for
+simple => xbus
+
