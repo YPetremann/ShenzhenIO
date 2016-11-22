@@ -1,0 +1,62 @@
+[name] (CPD) Thaui
+[puzzle] Sz005
+[production-cost] 600
+[power-usage] 296
+[lines-of-code] 10
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......154.154...1C....
+......154........A....
+....15554.155554.A....
+.................2....
+......................
+......................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 5
+[code] 
+0:teq p1  x1
+- slp 1
+- jmp 0
+1:tlt p0  20
++ mov 0   x2
+- mov 100 x2
+  teq p1  x0
+- slp 1
+- jmp 1
+  mov 0   x2
+
+[chip] 
+[type] DX3
+[x] 15
+[y] 5
+
+[chip] 
+[type] DIAL1
+[x] 5
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] RTC
+[x] 12
+[y] 6
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL2
+[x] 5
+[y] 7
+[is-puzzle-provided] true
+
