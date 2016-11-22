@@ -14,6 +14,7 @@ Harmonic Maximization Engine | 0 Thaui 4/285/7  | 0 Thaui 4/285/7  | 2 Thaui 4/3
 Passive Infrared Sensor      | 0 Thaui 6/361/8  | 1 Thaui 6/296/10 | 0 Thaui 6/361/8  | 0 Thaui 6/361/8
 Virtual Reality Buzzer       | 0 Thaui 3/134/6  | 0 Thaui 3/134/6  | 2 Thaui 12/422/4 | 0 Thaui 3/134/6
 Wireless Game Controller     | 0 Thaui 6/244/9  | 0 Thaui 6/244/9  | 0 Thaui 6/244/9  | 0 Thaui 6/244/9  
+Laser Tag Equipment          | 0 Thaui 7/399/13 | 1 Thaui 12/341/8 | 1 Thaui 12/341/8 | 0 Thaui 7/399/13
 
 ## Pull Requests and Guidelines
 
