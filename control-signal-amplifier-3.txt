@@ -33,7 +33,6 @@ follows:
 25 => 0
 50 => 100
 
-
 [chip] 
 [type] OR
 [x] 9

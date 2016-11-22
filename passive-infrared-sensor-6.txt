@@ -1,4 +1,4 @@
-[name] (P) CaitSith2
+[name] (PD) CAITHSITH2, Thaui
 [puzzle] Sz005
 [production-cost] 1200
 [power-usage] 182
@@ -10,26 +10,26 @@
 ......................
 ......................
 ......................
-......................
-......................
-..........94..........
-....1C...17554155C....
-.....354....14...2....
-............14........
+.........1C...........
+..........A...........
+.........17554155C....
+....1554....14...A....
+............14...2....
 .........14.14........
+......................
 ......................
 ......................
 
 [chip] 
 [type] RTC
 [x] 7
-[y] 2
+[y] 3
 [is-puzzle-provided] true
 
 [chip] 
 [type] UC6
 [x] 10
-[y] 2
+[y] 3
 [code] 
   mov x3 acc
   sub p0
@@ -49,13 +49,34 @@
 [chip] 
 [type] DIAL2
 [x] 13
-[y] 2
+[y] 3
 [is-puzzle-provided] true
 
 [chip] 
+[type] DIAL1
+[x] 13
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 7
+[y] 5
+[code] 
+@ tgt p0 19
++ mov 100 p1
+  slp 1
+  tgt p0 p1
+
+[chip] 
+[type] AND
+[x] 13
+[y] 5
+
+[chip] 
 [type] NOTE
-[x] 15
-[y] 2
+[x] 10
+[y] 6
 [code] 
 MC6000 gets diff
 between current
@@ -67,34 +88,11 @@ then diff between
 ON and OFF and slp
 
 [chip] 
-[type] DIAL1
-[x] 13
-[y] 3
-[is-puzzle-provided] true
-
-[chip] 
 [type] UC4
 [x] 7
-[y] 4
+[y] 7
 [code] 
-@ tgt p0 19
-+ mov 100 p1
-  slp 1
-  tgt p0 p1
-
-[chip] 
-[type] AND
-[x] 13
-[y] 4
-
-[chip] 
-[type] UC4
-[x] 11
-[y] 6
-[code] 
-@ mov 19 p0
-#seed the port
-#with 19
-#clamped to 0 by
-#AND gate.
+@ mov 19 p1
+#seed p1 with 19
+#clamp to 0 gate.
 

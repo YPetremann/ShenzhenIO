@@ -1,4 +1,4 @@
-[name] (P) CaitSith2
+[name] (PD) Caitsith2, Thaui
 [puzzle] Sz001
 [production-cost] 900
 [power-usage] 91
@@ -10,42 +10,49 @@
 ......................
 ......................
 ......................
-......................
-......95C.955555C.....
-......A.A169555CA.....
-......A.354A..16A.....
-....15E14956941D6.....
-....943C1694A956......
-....35434.3422........
+..........155555C.....
+..........15D55CA.....
+.....94.141CA..AA.....
+.....355D556A..AA.....
+.....941E9416.16A.....
+.....A..AA..941CA.....
+.....34.235421576.....
 ......................
 ......................
 
 [chip] 
-[type] NOT
-[x] 5
+[type] XOR
+[x] 13
 [y] 3
 [rotated] true
 
 [chip] 
 [type] NOT
-[x] 9
-[y] 3
+[x] 6
+[y] 4
+[rotated] true
+
+[chip] 
+[type] NOT
+[x] 10
+[y] 4
+[rotated] true
 
 [chip] 
 [type] UC6
-[x] 5
-[y] 4
+[x] 6
+[y] 6
 [code] 
   slp 1
   gen p0 1 1
   gen p0 1 1
-  mov 10 x2
-  slp 1
   mov 1 x2
+  slp 1
+  mov 10 x2
   slp 1
   mov 111 x2
   slp 1
-  mov 101 x2
+  mov 110 x2
   slp 1
   mov 11 x2
   slp 1
@@ -53,12 +60,6 @@
 
 [chip] 
 [type] DX3
-[x] 8
-[y] 4
-
-[chip] 
-[type] XOR
-[x] 13
-[y] 4
-[rotated] true
+[x] 9
+[y] 6
 

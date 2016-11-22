@@ -1,0 +1,75 @@
+[name] (CPD) THaui
+[puzzle] Sz010
+[production-cost] 900
+[power-usage] 357
+[lines-of-code] 23
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..........94.1C.......
+......14.16...34......
+.........154.154......
+..........94..94......
+..........35556.......
+......................
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 11
+[y] 4
+[code] 
+  slx x0
+  mov x0 p1
+  mov x0 p0
+  mov x0 acc
+  teq acc 999
+- slp acc
+- mov 0 p0
+- mov 0 p1
+
+[chip] 
+[type] LEDRGBV
+[x] 15
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] RADIO
+[x] 4
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4X
+[x] 7
+[y] 5
+[code] 
+  mov x0 acc
+  teq acc -999
+- mov acc x3
+- mov x0 x2
+- mov x0 x2
+- mov x0 acc
+- mov acc x3
+- mov acc x2
+  slp 1
+
+[chip] 
+[type] UC4
+[x] 11
+[y] 6
+[code] 
+  slx x0
+  mov x0 p1
+  mov x0 acc
+  teq acc 999
+- slp acc
+- mov 0 p1
+
