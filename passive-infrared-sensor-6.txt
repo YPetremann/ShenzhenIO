@@ -1,0 +1,98 @@
+[name] (PD) CAITHSITH2, Thaui
+[puzzle] Sz005
+[production-cost] 1200
+[power-usage] 182
+[lines-of-code] 19
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+.........1C...........
+..........A...........
+.........17554155C....
+....1554....14...A....
+............14...2....
+.........14.14........
+......................
+......................
+......................
+
+[chip] 
+[type] RTC
+[x] 7
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 3
+[code] 
+  mov x3 acc
+  sub p0
+  tlt acc 0
++ add 96
+  slp acc
+  mov 100 p1
+  mov x3 acc
+  sub x2
+  mul -1
+  tlt acc 0
++ add 96
+  slp acc
+  mov 0 p1
+  slp 999
+
+[chip] 
+[type] DIAL2
+[x] 13
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL1
+[x] 13
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 7
+[y] 5
+[code] 
+@ tgt p0 19
++ mov 100 p1
+  slp 1
+  tgt p0 p1
+
+[chip] 
+[type] AND
+[x] 13
+[y] 5
+
+[chip] 
+[type] NOTE
+[x] 10
+[y] 6
+[code] 
+MC6000 gets diff
+between current
+time and ON time,
+slps for that
+duration.
+
+then diff between
+ON and OFF and slp
+
+[chip] 
+[type] UC4
+[x] 7
+[y] 7
+[code] 
+@ mov 19 p1
+#seed p1 with 19
+#clamp to 0 gate.
+
