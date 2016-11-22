@@ -1,4 +1,4 @@
-[name] low lines of code
+[name] (L) Twarmboe
 [puzzle] Sz035
 [production-cost] 600
 [power-usage] 177
