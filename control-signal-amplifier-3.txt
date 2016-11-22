@@ -1,4 +1,4 @@
-[name] low power & low lines of Code
+[name] (PLD) Twarmboe
 [puzzle] Sz030
 [production-cost] 400
 [power-usage] 133
