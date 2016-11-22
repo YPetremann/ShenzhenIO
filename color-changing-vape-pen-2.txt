@@ -1,0 +1,84 @@
+[name] (LD) Thaui
+[puzzle] Sz010
+[production-cost] 1400
+[power-usage] 479
+[lines-of-code] 20
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+...94.......15C.......
+...A..14....1434......
+...A.....14.1554......
+...34....94.1494......
+.........355556.......
+......................
+......................
+......................
+
+[chip] 
+[type] RADIO
+[x] 4
+[y] 4
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 10
+[y] 4
+[code] 
+slx x0
+mov x0 x1
+mov x0 p1
+mov x0 p0
+
+[chip] 
+[type] BRIDGE
+[x] 13
+[y] 4
+
+[chip] 
+[type] LEDRGBV
+[x] 15
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 5
+[code] 
+  slx x1
+  mov x1  x2
+  mov x1  x2
+  mov x1  x2
+  mov x1 dat
+  teq dat 999
+- slp dat
+- mov 0   x2
+- mov 0   x2
+- mov 0   x2
+
+[chip] 
+[type] UC4X
+[x] 4
+[y] 6
+[code] 
+  mov x0  acc
+  teq acc -999
+- mov acc x2
++ slp 1
+
+[chip] 
+[type] UC4
+[x] 10
+[y] 6
+[code] 
+slx x1
+mov x1 p1
+
