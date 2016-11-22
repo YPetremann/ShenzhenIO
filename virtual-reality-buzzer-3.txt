@@ -1,0 +1,101 @@
+[name] low lines of code
+[puzzle] Sz035
+[production-cost] 600
+[power-usage] 177
+[lines-of-code] 3
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......955541C.1C......
+......B4.15C35C2......
+......A..1435C34......
+......A.154.16.8......
+......35554.1556......
+......................
+......................
+......................
+
+[chip] 
+[type] NOTE
+[x] 8
+[y] 1
+[code] 
+When p0 is high
+we are on.
+
+p1 = !p0
+
+switch state by
+moving p1 to p0
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 3
+
+[chip] 
+[type] UC4
+[x] 10
+[y] 3
+[code] 
+  gen p1 x0 1
+  teq x1 -999
+- mov p1 p0
+
+[chip] 
+[type] DX3
+[x] 7
+[y] 4
+[rotated] true
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 4
+
+[chip] 
+[type] NOTE
+[x] 3
+[y] 5
+[code] 
+DX300 turns
+100 => 1
+0 => 0
+
+so we can gen and
+sleep for 1/0
+ticks
+
+[chip] 
+[type] NOT
+[x] 10
+[y] 5
+
+[chip] 
+[type] AND
+[x] 10
+[y] 6
+
+[chip] 
+[type] RADIO
+[x] 12
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] NOTE
+[x] 9
+[y] 8
+[code] 
+The AND gate lets
+us know when p1
+is high and p0 is
+high (when we are
+generating a 
+pulse)
+
