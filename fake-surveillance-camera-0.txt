@@ -1,4 +1,4 @@
-[name] PRODUCTION COST
+[name] (YPD) THAUI
 [puzzle] Sz000
 [production-cost] 600
 [power-usage] 58

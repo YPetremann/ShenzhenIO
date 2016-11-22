@@ -1,4 +1,4 @@
-[name] LINES OF CODE
+[name] (L) THAUI
 [puzzle] Sz002
 [production-cost] 800
 [power-usage] 426

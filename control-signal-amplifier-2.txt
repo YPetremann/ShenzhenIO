@@ -1,4 +1,4 @@
-[name] LINES OF CODE
+[name] (YPLD) THAUI
 [puzzle] Sz030
 [production-cost] 300
 [power-usage] 240
