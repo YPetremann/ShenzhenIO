@@ -1,0 +1,63 @@
+[name] low power
+[puzzle] Sz002
+[production-cost] 900
+[power-usage] 109
+[lines-of-code] 14
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+...........1D41C......
+............A..2......
+.......154..A.........
+...........16.........
+......................
+......................
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 3
+[code] 
+@ mov 1 p1
+#free slp
+
+[chip] 
+[type] NOTE
+[x] 13
+[y] 4
+[code] 
+OR prevents
+1 from leaking
+through to pulse
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 5
+[code] 
++ mov 100 p1
+  slp 1
++ slp p1
++ teq p0 100
+- slp 3
+- teq p0 100
+@ teq p0 100
+- slp 1
+- teq p0 100
+- slp 1
+- teq p0 100
+- slp 1
+- teq p0 100
+
+[chip] 
+[type] OR
+[x] 13
+[y] 6
+
