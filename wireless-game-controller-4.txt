@@ -1,0 +1,67 @@
+[name] (LD) CaitSith2
+[puzzle] Sz011
+[production-cost] 800
+[power-usage] 190
+[lines-of-code] 6
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+.......9555554........
+.......A...154........
+......174.15C.........
+......154.142.15C.....
+.....9554.15541CA.....
+.....21555554..22.....
+......................
+......................
+
+[chip] 
+[type] BRIDGE
+[x] 12
+[y] 2
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 3
+[code] 
+  teq x3 -1
++ mov p0 x0
++ mov p1 x0
++ mov x2 x1
++ mov x0 x0
+- slp 1
+  
+#rom used to turn
+#A/B from DX300
+#into 0-3
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 3
+
+[chip] 
+[type] BANK
+[x] 4
+[y] 4
+[rom] 
+0,1,0,0,0,0,0,0,0,0,2,3,0,0
+
+[chip] 
+[type] BRIDGE
+[x] 11
+[y] 4
+
+[chip] 
+[type] RADIO
+[x] 13
+[y] 6
+[rotated] true
+[is-puzzle-provided] true
+
