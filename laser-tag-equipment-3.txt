@@ -1,8 +1,8 @@
 [name] (P) Twarmboe
 [puzzle] Sz048
-[production-cost] 800
-[power-usage] 196
-[lines-of-code] 7
+[production-cost] 1200
+[power-usage] 172
+[lines-of-code] 10
 
 [traces] 
 ......................
@@ -10,39 +10,55 @@
 ......................
 ......................
 ......................
-..94141C..............
-..A.94.A........955C..
-..2.35CA........A..2..
-..15416A..9555556.14..
-..1D4..A..A...9554....
-...3555E..34..34.154..
-.......355541554.14...
+..94141C...95555555C..
+..A.94.A...A.......A..
+..2.35CA...A955554.2..
+..15416A...AA..1C.14..
+..1D4..A.956A...A.1C..
+...3555E.34.34.174.2..
+.......3554154.14.....
 ......................
 ......................
 
 [chip] 
+[type] NOTE
+[x] 18
+[y] 1
+[code] 
+OR prevents value
+of 1 from going
+through to fire
+
+[chip] 
 [type] AND
-[x] 11
+[x] 10
 [y] 2
 
 [chip] 
 [type] UC4
-[x] 15
+[x] 13
 [y] 2
 [code] 
-  teq x0 0
+- teq x0 0
+@ teq x0 0
 - mov x1 acc
-- slp 1
-+ tlt p0 acc
-+ gen p1 1 1
-+ sub 1
-- slp 1
+- slp 2
++ slp 1
+  tlt p0 acc
++ mov 100 p1
++ slp 1
++ sub p1 #clr p1
 
 [chip] 
 [type] DIAL7
-[x] 18
+[x] 16
 [y] 2
 [is-puzzle-provided] true
+
+[chip] 
+[type] OR
+[x] 17
+[y] 3
 
 [chip] 
 [type] OR
@@ -51,7 +67,7 @@
 
 [chip] 
 [type] NOTE
-[x] 11
+[x] 9
 [y] 4
 [code] 
 AND gate only
@@ -60,9 +76,17 @@ while alive and
 pulling trigger
 
 [chip] 
+[type] UC4
+[x] 13
+[y] 4
+[code] 
+@ mov 1 p1
+#free slp
+
+[chip] 
 [type] DX3
 [x] 17
-[y] 4
+[y] 5
 
 [chip] 
 [type] AND
@@ -71,7 +95,7 @@ pulling trigger
 
 [chip] 
 [type] NOTE
-[x] 8
+[x] 7
 [y] 7
 [code] 
 SR Latch takes
@@ -81,15 +105,15 @@ without need of
 an MC
 
 [chip] 
-[type] NOTE
-[x] 17
-[y] 7
-[code] 
-DX300 only for
-simple => xbus
-
-[chip] 
 [type] NOT
 [x] 3
 [y] 8
+
+[chip] 
+[type] NOTE
+[x] 17
+[y] 8
+[code] 
+DX300 only for
+simple => xbus
 
