@@ -1,6 +1,6 @@
 [name] low power
 [puzzle] Sz048
-[production-cost] 1400
+[production-cost] 1200
 [power-usage] 172
 [lines-of-code] 10
 
@@ -11,11 +11,11 @@
 ......................
 ......................
 ..94141C...95555555C..
-..A.94.A...A955554.A..
-..2.35CA...AA..1C..2..
-..15416A...AA...A.14..
-..1D4..A.95634.1E.1C..
-...3555E.34.....34.2..
+..A.94.A...A.......A..
+..2.35CA...A955554.2..
+..15416A...AA..1C.14..
+..1D4..A.956A...A.1C..
+...3555E.34.34.174.2..
 .......3554154.14.....
 ......................
 ......................
@@ -27,7 +27,7 @@
 [code] 
 OR prevents value
 of 1 from going
-through
+through to fire
 
 [chip] 
 [type] AND
@@ -35,13 +35,13 @@ through
 [y] 2
 
 [chip] 
-[type] UC6
+[type] UC4
 [x] 13
 [y] 2
 [code] 
 - teq x0 0
 @ teq x0 0
-- mov x2 acc
+- mov x1 acc
 - slp 2
 + slp 1
   tlt p0 acc
@@ -78,7 +78,7 @@ pulling trigger
 [chip] 
 [type] UC4
 [x] 13
-[y] 5
+[y] 4
 [code] 
 @ mov 1 p1
 #free slp
