@@ -1,4 +1,4 @@
-[name] (P) Pwarmboe
+[name] (CPD) Twarmboe
 [puzzle] Sz000
 [production-cost] 600
 [power-usage] 57
