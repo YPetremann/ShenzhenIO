@@ -37,3 +37,5 @@ There is 4 main points :
 Improving a design can be done on the same file if it keep the idea.
 
 If you want to completely change the idea, duplicate the file and commit it like a new design.
+
+**Please update the record line in this file when you've done a new record in the coresponding project **
