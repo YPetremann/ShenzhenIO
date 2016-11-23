@@ -1,4 +1,4 @@
-[name] low power
+[name] (P) Twarmboe
 [puzzle] Sz035
 [production-cost] 900
 [power-usage] 85
