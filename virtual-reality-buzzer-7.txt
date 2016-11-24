@@ -1,0 +1,110 @@
+[name] (L) Twarmboe
+[puzzle] Sz035
+[production-cost] 1400
+[power-usage] 745
+[lines-of-code] 2
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......9554............
+......A.15C14.........
+......34..A14.14......
+........14A14.........
+........14354.........
+......................
+......................
+......................
+
+[chip] 
+[type] NOTE
+[x] 9
+[y] 1
+[code] 
+PGA-1
+
+This PGA keeps
+track of if we're
+on or off
+
+[chip] 
+[type] NOTE
+[x] 12
+[y] 1
+[code] 
+PGA-2
+
+This PGA generates
+the pulses and
+keepts track of
+if we were high
+last tick.
+
+[chip] 
+[type] NOTE
+[x] 4
+[y] 3
+[code] 
+A DX300 turns
+
+-999 => 111
+0    => 000
+1    => 001
+
+So we only need
+the 1st and 2nd
+bit.
+
+[chip] 
+[type] DX3
+[x] 7
+[y] 3
+
+[chip] 
+[type] PGA
+[x] 9
+[y] 3
+[array-switch] True
+[array-data] 
+0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+[chip] 
+[type] PGA
+[x] 12
+[y] 3
+[array-switch] True
+[array-data] 
+0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 6
+[code] 
+  gen p0 0 1
+  mov x1 x0
+
+[chip] 
+[type] RADIO
+[x] 12
+[y] 6
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] NOTE
+[x] 9
+[y] 8
+[code] 
+The gen pulse here
+acts like a clock
+signal. PGA-2 will
+only update when
+p0 is high. This
+only lasts for
+one instruction.
+
