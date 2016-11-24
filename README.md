@@ -16,6 +16,7 @@ Virtual Reality Buzzer       | 0 Thaui 3/134/6      | 6 Twarmboe 9/85/14    | 7 
 Wireless Game Controller     | 4 Thaui 6/244/9      | 3 CaitSith2 8/99/8    | 4 CaitSith2 8/190/6  | 3 CaitSith2 8/99/8
 Laser Tag Equipment          | 0 Thaui 7/399/13     | 1 Thaui 12/341/8      | 1 Thaui 12/341/8     | 0 Thaui 7/399/13
 Color Changing Vape Pen      | 3 CaitSith2 8/221/15 | 3 CaitSith2 8/221/15  | 4 CaitSith2 8/234/13 | 0 Thaui 9/357/23
+Unknown Optimization Device  | 0 CaitSith2 6/655/13 | 0 CaitSith2 6/655/13  | 0 CaitSith2 6/655/13 | 0 CaitSith2 6/655/13
 
 ## Pull Requests and Guidelines
 
