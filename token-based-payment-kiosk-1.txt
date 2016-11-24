@@ -1,0 +1,90 @@
+[name] (P) CaitSith2
+[puzzle] Sz009
+[production-cost] 1600
+[power-usage] 268
+[lines-of-code] 26
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+.......15C155555554...
+...141554A14..........
+...14.954A1554.155C...
+...14.A..A14......2...
+.....16..35494..954...
+.....14.....35556.....
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 2
+[code] 
+@ mov x1 p1
+
+[chip] 
+[type] DIAL3
+[x] 6
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] BANK
+[x] 8
+[y] 3
+[rom] 
+0,1,12,0,0,0,0,0,0,0,5,0,0,0
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 3
+[code] 
+top: slx x0
+  add x0
+  teq acc 0
++ jmp top
+m:tlt acc -4
++ add 5
++ gen p1 1 1
++ jmp m
+n:tlt acc 0
++ add 1
++ gen p0 1 1
++ jmp n
+
+[chip] 
+[type] DX3
+[x] 4
+[y] 4
+[rotated] true
+
+[chip] 
+[type] BRIDGE
+[x] 11
+[y] 4
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 5
+[code] 
+@ slp 1
+@ mov p0 acc
+t:teq x1 0
++ slp 1
++ jmp t
+  mov x1 x0
+  sub x3
+s:tgt acc 0
++ slp 2
+- mov acc x2
+- mov p0 acc
+- gen p1 4 0
+- slp 3
+
