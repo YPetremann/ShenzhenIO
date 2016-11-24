@@ -1,8 +1,8 @@
-[name] (YPD) Thaui
-[puzzle] Sz003
-[production-cost] 400
-[power-usage] 285
-[lines-of-code] 7
+[name] (PD) Caitsith2, Thaui
+[puzzle] Sz002
+[production-cost] 500
+[power-usage] 119
+[lines-of-code] 6
 
 [traces] 
 ......................
@@ -12,9 +12,9 @@
 ......................
 ......................
 ......................
-.....1554.............
-.........154.1554.....
-.....1555554..........
+.......955555414......
+.......A..1414........
+.......34.............
 ......................
 ......................
 ......................
@@ -22,20 +22,23 @@
 
 [chip] 
 [type] UC4
-[x] 11
+[x] 8
 [y] 4
 [code] 
-  teq x0 10
-+ mov p0 acc
-+ mul 4
-+ sub 150
-+ mov acc p1
-- mov p0 p1
+@ slp 1
+  teq p0 p1
+- slp 1
+- gen p1 1 1
+- mov 100 p1
   slp 1
 
 [chip] 
-[type] DX3
-[x] 8
+[type] NOT
+[x] 11
 [y] 5
-[rotated] true
+
+[chip] 
+[type] AND
+[x] 13
+[y] 5
 

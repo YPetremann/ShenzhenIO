@@ -1,4 +1,4 @@
-[name] (YPD) THAUI
+[name] (D) Thaui
 [puzzle] Sz000
 [production-cost] 600
 [power-usage] 58

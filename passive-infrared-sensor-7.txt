@@ -1,4 +1,4 @@
-[name] (LD) CAITHSITH2, THAUI
+[name] (L) CaitSith2
 [puzzle] Sz005
 [production-cost] 600
 [power-usage] 301
@@ -11,19 +11,24 @@
 ......................
 ......................
 ......................
-......154.154...1C....
-......154........A....
-....15554.155554.A....
-.................2....
+......................
+.........14.14........
+....8....14...........
+....3555554.155414....
 ......................
 ......................
 ......................
 ......................
 
 [chip] 
+[type] DX3
+[x] 15
+[y] 2
+
+[chip] 
 [type] UC6
-[x] 8
-[y] 5
+[x] 10
+[y] 4
 [code] 
   teq p1 x0
 - teq p1 x1
@@ -34,26 +39,21 @@
   slp 1
 
 [chip] 
-[type] DX3
-[x] 15
+[type] DIAL2
+[x] 8
 [y] 5
-
-[chip] 
-[type] DIAL1
-[x] 5
-[y] 6
 [is-puzzle-provided] true
 
 [chip] 
 [type] RTC
-[x] 12
-[y] 6
+[x] 13
+[y] 5
 [rotated] true
 [is-puzzle-provided] true
 
 [chip] 
-[type] DIAL2
-[x] 5
-[y] 7
+[type] DIAL1
+[x] 8
+[y] 6
 [is-puzzle-provided] true
 

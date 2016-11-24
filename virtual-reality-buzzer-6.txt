@@ -1,7 +1,7 @@
 [name] (P) Twarmboe
 [puzzle] Sz035
-[production-cost] 500
-[power-usage] 92
+[production-cost] 900
+[power-usage] 85
 [lines-of-code] 14
 
 [traces] 
@@ -11,38 +11,49 @@
 ......................
 ......................
 ......................
+........14.1C.........
+............B41C......
+............A..2......
+...........16.........
 ......................
 ......................
-.........154.154......
 ......................
 ......................
-......................
-......................
-......................
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 3
+[code] 
+@ mov 1 p1
 
 [chip] 
 [type] UC6
-[x] 11
-[y] 3
+[x] 9
+[y] 5
 [code] 
 + mov 100 p1
   slp 1
-+ mov x0 p1
-+ slp 4
-  tcp x0 -999
-+ gen p1 1 1
-+ gen p1 1 1
-+ gen p1 1 1
++ slp p1
 + teq x0 -999
-+ gen p1 1 1
-+ teq x0 -999
-+ gen p1 1 1
-+ teq x0 -999
-- slp 2
+- slp 3
+- tgt x0 -999
+@ tgt x0 -999
+- slp 1
+- tgt x0 -999
+- slp 1
+- tgt x0 -999
+- slp 1
+- tgt x0 -999
+
+[chip] 
+[type] OR
+[x] 13
+[y] 5
 
 [chip] 
 [type] RADIO
-[x] 7
-[y] 4
+[x] 6
+[y] 6
 [is-puzzle-provided] true
 
