@@ -1,5 +1,8 @@
 [name] (CP) CaitSith2
 [puzzle] Sz010
+[production-cost] 800
+[power-usage] 221
+[lines-of-code] 15
 
 [traces] 
 ......................
