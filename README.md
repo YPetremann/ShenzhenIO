@@ -18,6 +18,7 @@ Laser Tag Equipment          | 0 Thaui 7/399/13     | 1 Thaui 12/341/8      | 1 
 Color Changing Vape Pen      | 3 CaitSith2 8/221/15 | 3 CaitSith2 8/221/15  | 4 CaitSith2 8/234/13  | 0 Thaui 9/357/23
 Unknown Optimization Device  | 0 CaitSith2 6/655/13 | 0 CaitSith2 6/655/13  | 0 CaitSith2 6/655/13  | 0 CaitSith2 6/655/13
 Token-Based Payment Kiosk    | 0 CaitSith2 9/327/22 | 1 CaitSith2 16/268/26 | 2 CaitSith2 14/299/18 | 2 CaitSith2 14/299/18
+Personal Sandwich Maker      | 0 CaitSith2 6/87/14  | 0 CaitSith2 6/87/14   | 1 CaitSith2 8/89/13   | 0 CaitSith2 6/87/14
 
 ## Pull Requests and Guidelines
 
