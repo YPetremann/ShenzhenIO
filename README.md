@@ -21,6 +21,7 @@ Token-Based Payment Kiosk    | 0 CaitSith2 9/327/22  | 1 CaitSith2 16/268/26 | 2
 Personal Sandwich Maker      | 0 CaitSith2 6/87/14   | 0 CaitSith2 6/87/14   | 1 CaitSith2 8/89/13   | 0 CaitSith2 6/87/14
 Carbine Target Illuminator   | 2 CaitSith2 8/205/11  | 1 CaitSith2 11/162/11 | 0 CaitSith2 11/174/9  | 1 CaitSith2 11/162/11
 Haunted Doll                 | 0 CaitSith2 9/411/11  | 1 CaitSith2 19/147/37 | 0 CaitSith2 9/411/11  | 0 CaitSith2 9/411/11
+Aquaponics Maintenance Robot | 0 CaitSith2 8/162/22  | 1 CaitSith2 11/149/23 | 2 CaitSith2 9/178/19  | 1 CaitSith2 11/149/23
 
 ## Pull Requests and Guidelines
 

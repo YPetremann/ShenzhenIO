@@ -1,0 +1,67 @@
+[name] (C) CaitSith2
+[puzzle] Sz023
+[production-cost] 800
+[power-usage] 162
+[lines-of-code] 22
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+...........955554.1C..
+...........A.......2..
+..........174.14..1C..
+...........94.155556..
+...........A...15554..
+...........355555554..
+......................
+......................
+......................
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 4
+
+[chip] 
+[type] RADIO
+[x] 8
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 12
+[y] 5
+[code] 
+@ mov x1 acc
+  teq acc -999
+- mov acc x1
+- slx x1
+- gen p1 x1 0
+- gen p0 x0 1
++ slp 1
+  mov x0 acc
+
+[chip] 
+[type] UC6
+[x] 16
+[y] 6
+[code] 
+  mov 50 p1
++ slp 1
+- slp 1
+  teq acc dat
++ mov x0 x2
++ slx x2
++ mov x2 dat
+next: tcp  dat acc
++ mov 100 p1
+- mov 0 p1
++ slp 1
+- slp 1
++ add 1
+- sub 1
+
