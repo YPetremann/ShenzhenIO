@@ -1,0 +1,109 @@
+[name] (PLD) CaitSith2
+[puzzle] Sz007
+[production-cost] 1600
+[power-usage] 133
+[lines-of-code] 29
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......94...1555555C...
+......A..14155555C34..
+......A....1C..14354..
+..14.174.15CA..15554..
+..94..94.1CAA1415554..
+..34.16...AA35555554..
+.....155556354........
+......................
+......................
+
+[chip] 
+[type] BANK
+[x] 3
+[y] 2
+[rom] 
+1,1,0,1,1,2,0,2,0,0,0,0,0,0
+
+[chip] 
+[type] BRIDGE
+[x] 13
+[y] 2
+
+[chip] 
+[type] UC4X
+[x] 3
+[y] 4
+[code] 
+t:slx x0
+  mov x0 x1
+  teq x1 13
++ mov -13 acc
+- tlt x1 3
+- add acc
+- mov acc x3
+- mov 0 acc
++ add x1
+
+[chip] 
+[type] UC4X
+[x] 7
+[y] 4
+[code] 
+  slx x0
+  mov x0 x2
+  slp 2
+  mov 10 x3
+  slp x1
+  mov 1 x3
+  slp x1
+  mov x3 x0
+
+[chip] 
+[type] DX3
+[x] 14
+[y] 4
+
+[chip] 
+[type] NOTE
+[x] 3
+[y] 6
+[code] 
+Rom is not only
+used to store the
+cheese/mustard
+sleep times, but 
+is also used as
+an extra register
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 6
+[code] 
+  slx x0
+  mov 100 x3
+  slp 1
+  mov 10 x3
+  slp 1
+  mov 0 x3
+  slx x0
+  mov x0 x3
+  slp 1
+  mov 1 x3
+  slp 3
+  mov 0 x3
+
+[chip] 
+[type] DX3
+[x] 10
+[y] 6
+
+[chip] 
+[type] NOT
+[x] 16
+[y] 6
+[rotated] true
+

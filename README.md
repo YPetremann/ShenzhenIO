@@ -2,9 +2,10 @@
 ShenzhenIO Solutions as save folder
 
 ## Records
-
+Longteng Co. Ltd.
+---------------------------------------------------------------------------------------------------------------------------
 Task                         | Production Cost       | Power Usage           | Lines Of Code         | Pretty
----------------------------- | --------------------- | --------------------- | --------------------- | ---------------
+---------------------------- | --------------------- | --------------------- | --------------------- | --------------------
 Fake Surveillance Camera     | 0 Thaui 6/58/5        | 3 Twarmboe 6/57/8     | 2 Thaui 8/60/3        | 0 Thaui 6/58/5
 Control Signal Amplifier     | 0 Thaui 3/240/4       | 3 Twarmboe 4/133/3    | 0 Twarmboe 4/133/3    | 0 Thaui 3/240/4
 Diagnostic Pulse Generator   | 0 Thaui 3/142/3       | 3 CaitSith2 5/119/6   | 2 Thaui 8/426/1       | 4 Thaui 5/119/6
@@ -25,6 +26,22 @@ Aquaponics Maintenance Robot | 0 CaitSith2 8/162/22  | 1 CaitSith2 11/149/23 | 2
 Remote Kill Switch           | 0 CaitSith2 7/258/12  | 2 CaitSith2 8/243/11  | 1 CaitSith2 8/324/7   | 2 CaitSith2 8/243/11 
 Smart Grid Control Router    | 0 CaitSith2 5/315/9   | 1 CaitSith2 15/172/42 | 0 CaitSith2 5/315/9   | 0 CaitSith2 5/315/9
 Pocket I Ching Oracle        | 1 CaitSith2 8/135/14  | 0 CaitSith2 9/100/14  | 2 CaitSith2 9/177/12  | 0 CaitSith2 9/100/14
+Precision Food Scale         | 1 CaitSith2 5/402/11  | 0 CaitSith2 5/303/14  | 1 CaitSith2 5/402/11  | 1 CaitSith2 5/402/11
+---------------------------------------------------------------------------------------------------------------------------
+Avalon City
+---------------------------------------------------------------------------------------------------------------------------
+Task                         | Production Cost       | Power Usage           | Lines Of Code         | Pretty
+---------------------------- | --------------------- | --------------------- | --------------------- | --------------------
+---------------------------------------------------------------------------------------------------------------------------
+Hidden Puzzles
+---------------------------------------------------------------------------------------------------------------------------------
+Task                               | Production Cost       | Power Usage           | Lines Of Code         | Pretty
+---------------------------------- | --------------------- | --------------------- | --------------------- | --------------------
+Shenzhen I/O Trailer (0451)        | 0 CaitSith2 5/331/13  | 1 CaitSith2 25/130/57 | 0 CaitSith2 5/331/13  | 0 CaitSith2 5/331/13
+Personal Sandwich Assembler (2241) | 1 CaitSith2 15/136/30 | 0 CaitSith2 16/133/29 | 0 CaitSith2 16/133/29 | 0 CaitSith2 16/133/29
+
+
+
 
 ## Pull Requests and Guidelines
 
