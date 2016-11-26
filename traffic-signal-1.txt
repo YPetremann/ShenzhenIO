@@ -1,0 +1,141 @@
+[name] (P) CaitSith2
+[puzzle] Sz026
+[production-cost] 1800
+[power-usage] 225
+[lines-of-code] 27
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+...954.14....95541C...
+...A1C.14...16154.2...
+...34A.14...155541C...
+...816.14.141C154.2...
+...A8155C.14.35541C...
+...A354.355554154.2...
+...354..1554..........
+......................
+......................
+
+[chip] 
+[type] BRIDGE
+[x] 5
+[y] 2
+
+[chip] 
+[type] UC4
+[x] 6
+[y] 2
+[code] 
+@ slx x1
+@ slp x1
+  teq p1 0
+- slp 1
++ mov x0 x1
++ slx x1
++ slp x1
+
+[chip] 
+[type] BRIDGE
+[x] 11
+[y] 2
+
+[chip] 
+[type] NOT
+[x] 13
+[y] 3
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 3
+
+[chip] 
+[type] AND
+[x] 16
+[y] 3
+
+[chip] 
+[type] BRIDGE
+[x] 4
+[y] 4
+
+[chip] 
+[type] UC6
+[x] 8
+[y] 4
+[code] 
+t:teq p0 0
+- mov 2 x2
+- slx x2
+- mov x2 acc
+- mov 100 x3
+- mov 3 x1
++ sub 1
++ tlt acc 1
++ mov x0 acc
++ mov x0 x3
++ mov x0 x1
+  slp 1
+
+[chip] 
+[type] RAM
+[x] 5
+[y] 5
+
+[chip] 
+[type] DX3
+[x] 11
+[y] 5
+
+[chip] 
+[type] BRIDGE
+[x] 14
+[y] 5
+
+[chip] 
+[type] AND
+[x] 16
+[y] 5
+
+[chip] 
+[type] UC4X
+[x] 5
+[y] 7
+[code] 
+@ mov x0 x1
+@ mov 100 x1
+@ mov 3 x1
+@ mov x3 x1
+@ mov 10 x1
+@ mov 6 x1
+@ mov x2 x1
+@ mov 1 x1
+#free slp
+
+[chip] 
+[type] DIAL6
+[x] 8
+[y] 7
+[is-puzzle-provided] true
+
+[chip] 
+[type] AND
+[x] 16
+[y] 7
+
+[chip] 
+[type] DIAL4
+[x] 3
+[y] 8
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL5
+[x] 8
+[y] 8
+[is-puzzle-provided] true
+
