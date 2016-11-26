@@ -1,0 +1,57 @@
+[name] (CLD) CaitSith2
+[puzzle] Sz024
+[production-cost] 500
+[power-usage] 315
+[lines-of-code] 9
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+.....1C..95555554.....
+......A.174...........
+.....1F5554.15554.....
+......A.....1C........
+.....16......3554.....
+......................
+......................
+......................
+
+[chip] 
+[type] NOTE
+[x] 7
+[y] 3
+[code] 
+No data bits other
+than the first one
+are ever greater
+than 100.
+
+The MC6000 is
+required for its
+DAT register.
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 4
+[code] 
+  slx x1
+  mov x1 acc
+  tgt acc 99
++ mov acc dat
+  tcp dat x0
++ mov acc x0
+- mov acc x2
+  teq dat x0
++ mov acc x3
+
+[chip] 
+[type] ID
+[x] 7
+[y] 6
+[is-puzzle-provided] true
+
