@@ -1,0 +1,79 @@
+[name] (P) CaitSith2
+[puzzle] Sz021
+[production-cost] 1200
+[power-usage] 312
+[lines-of-code] 28
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+...9555C954...........
+...294.AA94.15C.......
+...16.16AA..1CA.......
+...15C15634..AA.......
+...14A15554..AA.......
+.....355555556A.......
+......155555556.......
+......................
+......................
+
+[chip] 
+[type] RAM
+[x] 4
+[y] 2
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 4
+[code] 
+  slp 1
+  mov p1 x1
+  mov p0 x1
+  teq x2 x0
++ mov x1 null
++ mov x1 null
++ mov x2 x3
++ slp 2
++ mov p1 x1
++ mov p0 x1
++ slp 1
++ mov p1 x1
++ mov p0 x1
+
+[chip] 
+[type] RADIO
+[x] 10
+[y] 4
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 6
+[code] 
+  slx x0
+  teq x0 1
+- mov x2 null
+  mov x2 x1
+  mov x2 null
+  mov x2 x1
+  mov x2 null
+  mov x2 x1
+  mov x2 null
+  mov x2 x1
+  mov x2 null
+  mov x2 x1
+  mov x2 null
+  mov x2 x1
+
+[chip] 
+[type] ID
+[x] 5
+[y] 7
+[is-puzzle-provided] true
+
