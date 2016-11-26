@@ -28,6 +28,7 @@ Smart Grid Control Router         | 0 CaitSith2 5/315/9   | 1 CaitSith2 15/172/4
 Pocket I Ching Oracle             | 1 CaitSith2 8/135/14  | 0 CaitSith2 9/100/14  | 2 CaitSith2 9/177/12  | 0 CaitSith2 9/100/14
 Precision Food Scale              | 1 CaitSith2 5/402/11  | 0 CaitSith2 5/303/14  | 1 CaitSith2 5/402/11  | 1 CaitSith2 5/402/11
 Cryptocurrency Deposit Terminal   | 0 CaitSith2 11/539/19 | 1 CaitSith2 18/282/36 | 0 CaitSith2 11/539/19 | 1 CaitSith2 18/282/36
+Pollution-Sensing Smart Window    | 1 CaitSith2 7/277/8   | 0 CaitSith2 10/266/8  | 0 CaitSith2 10/266/8  | 0 CaitSith2 10/266/8
 ---------------------------------------------------------------------------------------------------------------------------------
 Avalon City
 ---------------------------------------------------------------------------------------------------------------------------------
