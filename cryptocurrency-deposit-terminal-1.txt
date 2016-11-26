@@ -1,0 +1,99 @@
+[name] (PD) CaitSith2
+[puzzle] Sz013
+[production-cost] 1800
+[power-usage] 282
+[lines-of-code] 36
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..155D5554....14.15C..
+.....A.....14....1CA..
+..14.34....1C.....A2..
+..14154.15556.....A...
+..14....15555555556...
+......................
+......................
+......................
+
+[chip] 
+[type] DX3
+[x] 3
+[y] 3
+[rotated] true
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 3
+[code] 
+@ teq 0 0
++ slx x3
++ mov x3 acc
+  slp 1
+  teq x1 000
++ jmp f
+  tcp x1 010
+  add 50
+  slp 1
++ add 50
+- sub 30
+f:teq x0 -1
++ mov acc x2
++ mov 3 x3
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 5
+[code] 
+  tgt x0 -1
++ mov x0 x3
++ mov x0 x3
++ mov x0 x3
++ mov x0 x3
++ mov x0 x3
++ mov x0 x3
++ mov x0 x3
++ mov 0 x2
++ slx x2
++ slp x2
+- slp 1
+
+[chip] 
+[type] RAM
+[x] 12
+[y] 6
+
+[chip] 
+[type] UC6
+[x] 15
+[y] 6
+[code] 
+  slx x2
+  mov null x3
+  mov x1 x3
+  mov x1 x3
+  mov x1 x3
+  mov x1 x3
+  mov x1 x3
+  mov x1 x3
+  mov x1 x3
+  mov x2 x3
+
+[chip] 
+[type] NOTE
+[x] 12
+[y] 8
+[code] 
+Take a wild guess
+as to which digit
+is ALWAYS zero in
+the account number
+
+:)
+
