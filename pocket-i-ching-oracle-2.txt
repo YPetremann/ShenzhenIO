@@ -1,0 +1,78 @@
+[name] (L) CaitSith2
+[puzzle] Sz017
+[production-cost] 900
+[power-usage] 177
+[lines-of-code] 12
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..9555555C....14......
+..34154..34...14......
+....1554.94.1414......
+....1C14.A..1414......
+....169416....14......
+....156.......14......
+......................
+......................
+......................
+
+[chip] 
+[type] ORACLE
+[x] 2
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 3
+
+[chip] 
+[type] LCDH
+[x] 15
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] DX3
+[x] 7
+[y] 4
+[rotated] true
+
+[chip] 
+[type] DX3
+[x] 3
+[y] 5
+
+[chip] 
+[type] BRIDGE
+[x] 6
+[y] 5
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 5
+[code] 
++ teq x0 0
++ jmp t
+- mov x1 x0
+- slp 1
+- mov x1 x0
+- slp 1
+  tgt dat -1
+- mov x1 dat
++ mov dat x2
++ mov x1 x3
++ mov -1 dat
+t:slp 1
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 6
+
