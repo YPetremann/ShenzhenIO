@@ -1,0 +1,79 @@
+[name] (PD) CaitSith2
+[puzzle] Sz023
+[production-cost] 1100
+[power-usage] 149
+[lines-of-code] 23
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..........9554.1555C..
+.......9556954..9416..
+......174.1694..A.....
+..........1C35556.....
+...........355554154..
+.................154..
+.................14...
+......................
+......................
+
+[chip] 
+[type] DX3
+[x] 16
+[y] 2
+
+[chip] 
+[type] NOT
+[x] 18
+[y] 2
+[rotated] true
+
+[chip] 
+[type] RADIO
+[x] 4
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4X
+[x] 8
+[y] 5
+[code] 
+  slp x2
+  mov x0 acc
+  teq acc -999
+- mov acc x3
+- slx x3
+- mov 100 x2
+- slp x3
+- mov 10 x2
+- slp x0
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 6
+[code] 
+@ mov 50 p1
+@ teq 0 0
++ slx x1
++ mov x1 dat
+next: tcp  dat acc
++ gen p0 1 1
++ add 1
+- mov 0 p1
+- slp 1
+- mov 50 p1
+- slp 1
+- sub 1
+  teq acc dat
++ mov x0 x1
+
+[chip] 
+[type] OR
+[x] 17
+[y] 6
+
