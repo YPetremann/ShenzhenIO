@@ -30,6 +30,7 @@ Precision Food Scale              | 1 CaitSith2 5/402/11  | 0 CaitSith2 5/303/14
 Cryptocurrency Deposit Terminal   | 0 CaitSith2 11/539/19 | 1 CaitSith2 18/282/36 | 0 CaitSith2 11/539/19 | 1 CaitSith2 18/282/36
 Pollution-Sensing Smart Window    | 1 CaitSith2 7/277/8   | 0 CaitSith2 10/266/8  | 0 CaitSith2 10/266/8  | 0 CaitSith2 10/266/8
 Traffic Signal                    | 0 CaitSith2 11/307/17 | 1 CaitSith2 18/225/27 | 0 CaitSith2 11/307/17 | 0 CaitSith2 11/307/17
+Meat-Based Printer                | 0 CaitSith2 11/69/26  | 0 CaitSith2 11/69/26  | 1 CaitSith2 11/88/17  | 0 CaitSith2 11/69/26
 ---------------------------------------------------------------------------------------------------------------------------------
 Avalon City
 ---------------------------------------------------------------------------------------------------------------------------------
