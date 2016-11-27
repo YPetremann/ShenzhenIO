@@ -47,7 +47,7 @@ Scientific Chronometer            |                        |                    
 Automatic Pet Feeder              |                        |                        |                        |
 Electronic Practice Target        |                        |                        |                        |
 Aquatic Harvesting Robot          |                        |                        |                        |
-Sushi-Making Robot                |                        |                        |                        |
+Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
 Thorium Reactor Status Monitor    | 2 CaitSith2 20/2233/40 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
 Cellular Scaffold Printer         |                        |                        |                        |
