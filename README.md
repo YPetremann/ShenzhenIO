@@ -37,7 +37,8 @@ Spoiler Blocking Headphones       | 1 CaitSith2 8/947/14   | 0 CaitSith2 17/572/
 Color Coordinating Shoes          | 1 CaitSith2 22/1037/43 | 0 CaitSith2 26/882/43  | 2 CaitSith2 24/986/38  | 1 CaitSith2 22/1037/43
 Airline Cocktail Mixer            | 0 CaitSith2 11/198/31  | 1 CaitSith2 21/119/24  | 2 CaitSith2 15/138/17  | 0 CaitSith2 11/198/31
 Safetynet Tracking Badge          | 1 CaitSith2 12/424/22  | 0 CaitSith2 23/305/47  | 1 CaitSith2 12/424/22  | 1 CaitSith2 12/424/22
--------------------------------------------------------------------------------------------------------------------------------------
+
+
 Avalon City
 -------------------------------------------------------------------------------------------------------------------------------------
 Task                              | Production Cost        | Power Usage            | Lines Of Code          | Pretty
@@ -52,7 +53,8 @@ Thorium Reactor Status Monitor    | 2 CaitSith2 20/2233/40 | 1 CaitSith2 22/544/
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
 Cellular Scaffold Printer         |                        |                        |                        |
 Neural Processor Logic Board      |                        |                        |                        |
--------------------------------------------------------------------------------------------------------------------------------------
+
+
 Hidden Puzzles
 -------------------------------------------------------------------------------------------------------------------------------------
 Task                               | Production Cost        | Power Usage            | Lines Of Code          | Pretty
