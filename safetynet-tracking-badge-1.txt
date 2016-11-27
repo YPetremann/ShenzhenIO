@@ -1,0 +1,76 @@
+[name] (CLD) CaitSith2
+[puzzle] Sz027
+[production-cost] 1200
+[power-usage] 424
+[lines-of-code] 22
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..15555555C95554......
+..1C..14.16B4.94......
+...A..14.156..34.154..
+...35554.1555554......
+......................
+......................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 15
+[y] 3
+[code] 
+  teq x0 1
++ mov x0 acc
+y:+mov x0 p1
++ mov -1 x1
++ sub 1
++ slp 1
++ tgt acc 0
++ jmp y
+  mov 50 p1
+  mov x0 x1
+f:-slp 1
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 4
+[code] 
+  teq p0 0
++ jmp e
+  tgt p0 79
++ mov 8 x1
+- mov p1 x1
+- tgt p0 50
+- mov x0 acc
+  mov x0 acc
+e:teq x2 x3
++ mov acc x3
+  slp 1
+
+[chip] 
+[type] BANK
+[x] 4
+[y] 5
+[rom] 
+600,600,204,700,202,700,200,700,100,0,203,700,201,700
+
+[chip] 
+[type] ID
+[x] 12
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] RADIO
+[x] 15
+[y] 6
+[rotated] true
+[is-puzzle-provided] true
+
