@@ -1,0 +1,81 @@
+[name] (L) CaitSith2
+[puzzle] Sz020
+[production-cost] 1500
+[power-usage] 138
+[lines-of-code] 17
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......154.1555541554..
+......94.954....1554..
+......A95E......1554..
+..14.16A.A............
+..15C156.A......1554..
+....A.154A1555541554..
+....3554.354....1554..
+......................
+......................
+
+[chip] 
+[type] BANK
+[x] 4
+[y] 2
+[rom] 
+1,2,0,0,0,0,110,2,10,4,1,2,100,2
+
+[chip] 
+[type] UC4X
+[x] 8
+[y] 2
+[code] 
+  slx x2
+  mov x0 x3
+  slp x0
+  mov 0 x3
+
+[chip] 
+[type] DX3
+[x] 15
+[y] 2
+
+[chip] 
+[type] UC4X
+[x] 3
+[y] 4
+[code] 
+  slx x0
+  mov x0 acc
+  add acc
+  mov acc x1
+  mov acc x3
+  mov acc x2
+
+[chip] 
+[type] DX3
+[x] 15
+[y] 6
+
+[chip] 
+[type] BANK
+[x] 4
+[y] 7
+[rom] 
+10,6,100,3,101,2,100,4,100,4,100,6,10,6
+
+[chip] 
+[type] UC4X
+[x] 8
+[y] 7
+[code] 
+  slx x2
+  teq x2 4
+  mov x0 x3
+  slp x0
++ mov x0 x3
++ slp x0
+  mov 0 x3
+

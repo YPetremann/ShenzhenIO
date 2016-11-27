@@ -1,0 +1,75 @@
+[name] (LD) CaitSith2
+[puzzle] Sz019
+[production-cost] 1100
+[power-usage] 980
+[lines-of-code] 12
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......................
+......................
+......................
+...8.941D5414.1554....
+...A.3416..14.14......
+...3414....14.14......
+......................
+......................
+
+[chip] 
+[type] NOT
+[x] 4
+[y] 2
+
+[chip] 
+[type] AND
+[x] 6
+[y] 2
+
+[chip] 
+[type] NLP
+[x] 9
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 2
+[code] 
+  mov x1 dat
+  mov 0 x3
+lp:teq dat x2
+- mov x2 null
+- teq x3 0
+- jmp lp
++ teq x1 x2
++ mov 111 x0
+sp:-tgt x0 0
++ mov 50 p1
+- mov p0 p1
+  slp 1
+
+[chip] 
+[type] BANK
+[x] 15
+[y] 2
+[rom] 
+-999,0,495,160,575,645,138,420,712,917,711,573,356,361
+
+[chip] 
+[type] OR
+[x] 6
+[y] 4
+[rotated] true
+
+[chip] 
+[type] DX3
+[x] 10
+[y] 4
+[rotated] true
+

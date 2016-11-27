@@ -1,0 +1,88 @@
+[name] (P) CaitSith2
+[puzzle] Sz024
+[production-cost] 1500
+[power-usage] 172
+[lines-of-code] 42
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......9555554.........
+.....1E...954.154.....
+......A.156...........
+.....1F554.15D554.....
+......A....14A........
+.....17555554A154.....
+.............354......
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 2
+[code] 
+- slx x0
+- mov x0 x3
+- mov x1 acc
+- mov acc x3
+- mov x1 x3
+- mov x1 x3
+- mov x1 x3
+- sub 3
+- teq acc 0
+- mov x1 x3
+- sub 1
+  tgt acc 0
++ mov x1 x3
++ sub 1
+
+[chip] 
+[type] ID
+[x] 15
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 4
+[code] 
+  slx x1
+  mov x1 acc
+  tcp acc x3
++ mov acc x0
+- mov acc x2
+  teq acc x3
+- slp 1
++ mov acc x3
++ mov x1 acc
++ mov acc x3
+loop: +mov x1 x3
++ sub 1
++ tgt acc 0
++ jmp loop
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 6
+[code] 
+- slx x1
+- mov x1 x3
+- mov x0 acc
+- mov acc x3
+- mov x0 x3
+- mov x0 x3
+- mov x0 x3
+- sub 3
+- teq acc 0
+- mov x0 x3
+- sub 1
+  tgt acc 0
++ mov x0 x3
++ sub 1
+

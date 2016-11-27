@@ -1,0 +1,140 @@
+[name] (C) CaitSith2
+[puzzle] Sz040
+[production-cost] 1600
+[power-usage] 746
+[lines-of-code] 35
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..155C......9555555C..
+.....A.95555E..14.16..
+...14A16.14.34.14954..
+...14354.14.14.15614..
+...14.1C.14.1C.1C..8..
+.......3555557543556..
+......................
+......................
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 2
+
+[chip] 
+[type] SWITCH14
+[x] 2
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 3
+[code] 
+  slp 1
+  mov x3 dat
+  mov dat p1
+  teq dat 1
++ teq acc 0
++ mov p0 x2
++ mov x1 x2
++ mov x0 acc
+- tgt acc 0
++ sub 1
+
+[chip] 
+[type] SWITCH15
+[x] 8
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 3
+[code] 
+@ mov x3 p1
+@ slp 1
+@ mov 0 p1
+  nop
+  teq p1 2
++ mov p0 x2
++ mov x1 x2
++ slp x0
+- slp 1
+  nop
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 3
+[code] 
+  slx x0
+  teq x0 0
++ mov x0 p1
+- mov x0 p0
+  slp 1
+  teq p0 p1
+
+[chip] 
+[type] DIAL11
+[x] 2
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL12
+[x] 8
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL10
+[x] 13
+[y] 4
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL8
+[x] 2
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL9
+[x] 8
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] SWITCH16
+[x] 14
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 5
+[code] 
+@ slp 1
+@ mov p1 acc
+  nop
+  teq p1 3
++ mov p0 x1
++ mov x0 x1
++ slp acc
+- slp 1
+  nop
+
+[chip] 
+[type] DIAL13
+[x] 14
+[y] 6
+[is-puzzle-provided] true
+

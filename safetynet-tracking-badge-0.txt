@@ -1,0 +1,138 @@
+[name] (P) CaitSith2
+[puzzle] Sz027
+[production-cost] 2300
+[power-usage] 305
+[lines-of-code] 47
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..955555C15C1555C.....
+..2.....A94A1554A15C..
+..94.1C.AA.355D4A..A..
+..A.14A162..1CA.A1C2..
+..A.14A155555634A.A...
+..35543555555554A16...
+................354...
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 15
+[y] 2
+[code] 
+@ slp 1
+  teq x0 2
++ mov 3 dat
+- mov 1 dat
++ teq x0 x2
++ mov -1 x1
+- mov x0 acc
+- teq acc -999
+- mov acc x3
+- slx x3
+  slp dat
+
+[chip] 
+[type] ID
+[x] 18
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 3
+[code] 
+start: slx x2
+  teq x2 p0
+- mov dat x3
+- jmp start
+  tgt p0 79
++ mov 8 x1
+- mov p1 x1
+- tgt p0 50
+- mov x0 dat
+  mov x0 dat
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 3
+
+[chip] 
+[type] BANK
+[x] 2
+[y] 4
+[rom] 
+600,600,204,700,202,700,200,700,100,0,203,700,201,700
+
+[chip] 
+[type] RADIO
+[x] 10
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 15
+[y] 5
+[code] 
+  tgt acc 0
++ mov x1 p1
++ sub 1
++ slp 1
+- mov 50 p1
+- slx x2
+- mov x2 acc
+- mov acc x0
+  tgt acc 2
++ mov x1 p1
++ slp 1
++ mov x1 p1
++ slp 1
++ sub 2
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 6
+[code] 
+  teq p0 0
+- mov p0 x1
+  slp 1
+
+[chip] 
+[type] UC4X
+[x] 10
+[y] 7
+[code] 
+@ slx x2
+@ slp x2
+@ slp 1
+  teq x0 2
++ mov 3 acc
+- mov 1 acc
++ teq x0 x3
++ mov -1 x1
+  slp acc
+
+[chip] 
+[type] NOTE
+[x] 17
+[y] 8
+[code] 
+this design abuses
+the fact that
+there is never
+more than one
+audio transmission
+per test case.
+
+This would fail in
+real world usage.
+

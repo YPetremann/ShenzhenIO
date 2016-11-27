@@ -1,0 +1,70 @@
+[name] (C) CaitSith2
+[puzzle] Sz017
+[production-cost] 800
+[power-usage] 135
+[lines-of-code] 14
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+....155555C...14......
+....1414.16...14......
+.........1555414......
+.........1555414......
+..............14......
+..............14......
+......................
+......................
+......................
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 3
+
+[chip] 
+[type] LCDH
+[x] 15
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] DX3
+[x] 5
+[y] 5
+[rotated] true
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 5
+[code] 
+  tcp p1 0
++ mov -1 dat
+top:+dst 0 x0
+  slp 1
++ dst 1 x0
++ slp 1
++ dst 2 x0
++ teq dat -1
++ mov acc dat
++ slp 1
++ jmp top
+- mov dat x2
+- mov acc x3
+- slp 4
+
+[chip] 
+[type] DX3
+[x] 13
+[y] 6
+
+[chip] 
+[type] ORACLE
+[x] 2
+[y] 7
+[is-puzzle-provided] true
+

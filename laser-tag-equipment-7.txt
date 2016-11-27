@@ -1,0 +1,137 @@
+[name] (L) CaitSith2
+[puzzle] Sz048
+[production-cost] 1400
+[power-usage] 281
+[lines-of-code] 5
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..941495555415C9555C..
+..A954A9541C..A341CA..
+..2A156A15C354354.22..
+..1E.9569C341D555554..
+..169615634156....8...
+...161C.14.155554.A8..
+......34...14....176..
+......................
+......................
+
+[chip] 
+[type] NOTE
+[x] 1
+[y] 1
+[code] 
+set done by
+respawn
+
+reset done by hit
+
+[chip] 
+[type] DX3
+[x] 7
+[y] 2
+[rotated] true
+
+[chip] 
+[type] UC4X
+[x] 9
+[y] 2
+[code] 
+  tlt acc x2
+- mov 100 x0
+  add x3
+  mul x0
+  slp 1
+
+[chip] 
+[type] DIAL7
+[x] 12
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] DX3
+[x] 16
+[y] 2
+
+[chip] 
+[type] NOT
+[x] 4
+[y] 3
+[rotated] true
+
+[chip] 
+[type] NOT
+[x] 10
+[y] 4
+[rotated] true
+
+[chip] 
+[type] BRIDGE
+[x] 18
+[y] 4
+
+[chip] 
+[type] OR
+[x] 3
+[y] 5
+[rotated] true
+
+[chip] 
+[type] OR
+[x] 11
+[y] 5
+[rotated] true
+
+[chip] 
+[type] AND
+[x] 9
+[y] 6
+
+[chip] 
+[type] AND
+[x] 16
+[y] 6
+
+[chip] 
+[type] AND
+[x] 5
+[y] 7
+
+[chip] 
+[type] AND
+[x] 11
+[y] 7
+
+[chip] 
+[type] NOT
+[x] 3
+[y] 8
+
+[chip] 
+[type] NOTE
+[x] 7
+[y] 8
+[code] 
+There are two
+AND / OR SR
+latches in this
+design.
+
+Left = Life
+Right = Ammo
+
+[chip] 
+[type] NOTE
+[x] 18
+[y] 8
+[code] 
+set done by reload
+
+reset done by out
+of ammo
+

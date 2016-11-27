@@ -1,0 +1,60 @@
+[name] (CLD) CaitSith2
+[puzzle] Sz021
+[production-cost] 700
+[power-usage] 482
+[lines-of-code] 14
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+...155555C............
+.....14.1694..........
+.....14.1574..........
+...1554.1554..........
+......................
+......................
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 4
+[code] 
+t:slp 1  
+  mov p1 x0
+  mov p0 x0
+  teq x3 x2
+- jmp t
+  teq x2 1
+- mov x0 null
+  mov x1 acc
+  mov x0 null
+  mov x0 null
+loop:  mov x0 x3
+  mov x0 null
+  teq acc x1
+- jmp loop
+
+[chip] 
+[type] RADIO
+[x] 11
+[y] 4
+[rotated] true
+[is-puzzle-provided] true
+
+[chip] 
+[type] RAM
+[x] 3
+[y] 5
+
+[chip] 
+[type] ID
+[x] 11
+[y] 6
+[is-puzzle-provided] true
+

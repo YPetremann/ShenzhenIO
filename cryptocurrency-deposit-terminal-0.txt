@@ -1,0 +1,64 @@
+[name] (CL) CaitSith2
+[puzzle] Sz013
+[production-cost] 1100
+[power-usage] 539
+[lines-of-code] 19
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..........9555C.......
+..15554...A..174.15C..
+.....94.156..154.1CA..
+..1416..155555555562..
+..14..................
+..14..................
+......................
+......................
+......................
+
+[chip] 
+[type] DX3
+[x] 3
+[y] 3
+[rotated] true
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 5
+[code] 
+  teq x1 10
++ add 30
+- teq x1 1
++ add 20
+- add x1
+f:mov x0 dat
+  teq dat -1
++ mov acc x2
++ sub acc
+- tlt dat 0
+- mov dat x3
+  slp 1
+
+[chip] 
+[type] RAM
+[x] 11
+[y] 6
+
+[chip] 
+[type] UC4X
+[x] 15
+[y] 6
+[code] 
+@ teq acc 0
++ slx x2
++ mov 0 x1
+  mov x0 x3
+  teq x1 8
++ mov 0 x1
++ mov x2 x3
+
