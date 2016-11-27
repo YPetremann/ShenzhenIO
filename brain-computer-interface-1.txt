@@ -1,0 +1,144 @@
+[name] (P) CaitSith2
+[puzzle] Sz045
+[production-cost] 3200
+[power-usage] 2768
+[lines-of-code] 64
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..14....15C.15C.......
+..14....14A154A15C....
+..1414.154A1C.A1CA14..
+....94.14.A.A.A.AA1C..
+..14A..154A.B4A16A.A..
+..1434..15616.A156.A..
+..14..........355556..
+......................
+......................
+
+[chip] 
+[type] DX3
+[x] 3
+[y] 2
+[rotated] true
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 2
+[code] 
+  mov x0 acc
+  tgt acc 99
++ mov 4 x3
++ sub 100
+  tgt acc 9
++ mov 3 x3
++ sub 10
+  teq acc 1
++ mov 2 x3
+  mov null x1
+  slx x0
+
+[chip] 
+[type] UC4X
+[x] 13
+[y] 3
+[code] 
+  slx x0
+  mov x0 x3
+  mov 1 x2
+
+[chip] 
+[type] RAM
+[x] 16
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 4
+[code] 
+  mov x0 acc
+  add x1
+  teq acc 1
+- teq acc 10
+- teq acc 100
++ mov 1 p1
++ mov x0 x3
++ mov x1 x2
++ slp 1
+  mov 0 p1
+  mov x0 x3
+  mov x1 x2
+  slp 1
+
+[chip] 
+[type] BRIDGE
+[x] 8
+[y] 5
+
+[chip] 
+[type] UC6
+[x] 16
+[y] 5
+[code] 
+T:slx x2
+  tgt x2 1
++ mov 13 x1
+L:+teq x0 1
++ mov x1 x3
+  tlt x1 5
++ jmp L
+  mov 13 x1
+C:mov 0 x0
+  mov 0 x0
+  mov 0 x0
+  mov 0 x0
+  mov 0 x0
+  mov 0 x0
+
+[chip] 
+[type] DX3
+[x] 3
+[y] 6
+[rotated] true
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 6
+[code] 
+  mov x1 acc
+  tgt acc 99
++ mov 1 x2
++ sub 100
+  tgt acc 9
++ mov 0 x2
++ sub 10
+  teq acc 1
++ mov -1 x2
+  teq p0 x0
++ mov 0 x3
+  slx x1
+
+[chip] 
+[type] UC6
+[x] 13
+[y] 6
+[code] 
+  slx x1
+  mov x1 acc
+  mov 13 x2
+  add x3
+  add x3
+  add x3
+  add x3
+  add x3
+  add x3
+  teq acc 0
+- mov acc x0
+
