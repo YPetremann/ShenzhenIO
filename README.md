@@ -34,7 +34,7 @@ Meat-Based Printer                | 0 CaitSith2 11/69/26   | 0 CaitSith2 11/69/2
 Electronic Door Lock              | 1 CaitSith2 7/176/12   | 0 CaitSith2 8/107/21   | 1 CaitSith2 7/176/12   | 1 CaitSith2 7/176/12
 Deep Sea Sensor Grid              | 0 CaitSith2 7/482/14   | 1 CaitSith2 12/312/28  | 0 CaitSith2 7/482/14   | 0 CaitSith2 7/482/14
 Spoiler Blocking Headphones       | 1 CaitSith2 8/947/14   | 0 CaitSith2 17/572/36  | 2 CaitSith2 11/980/12  | 2 CaitSith2 11/980/12
-Color Coordinating Shoes          |                        |                        |                        |
+Color Coordinating Shoes          | 1 CaitSith2 22/1037/43 | 0 CaitSith2 26/882/43  | 2 CaitSith2 24/986/38  | 1 CaitSith2 22/1037/43
 Airline Cocktail Mixer            |                        |                        |                        |
 Safetynet Tracking Badge          |                        |                        |                        |
 -------------------------------------------------------------------------------------------------------------------------------------
