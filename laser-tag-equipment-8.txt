@@ -1,0 +1,68 @@
+[name] (C) Twarmboe
+[puzzle] Sz048
+[production-cost] 600
+[power-usage] 219
+[lines-of-code] 9
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..954.................
+..A9415C.........14...
+..2355C2.........154..
+..154.B5C.....954.14..
+..1D4168A.....A.......
+...35556A.....34.154..
+........35555554.14...
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 15
+[y] 2
+[code] 
+@ mov 100 p0
+  tlt x0 99
+- mov x1 acc
+@ mov 0 p0
++ teq x0 10
++ tlt p0 acc
++ gen p1 1 1
++ sub 1
+- slp 1
+
+[chip] 
+[type] DIAL7
+[x] 18
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] OR
+[x] 4
+[y] 4
+
+[chip] 
+[type] BRIDGE
+[x] 7
+[y] 4
+
+[chip] 
+[type] DX3
+[x] 16
+[y] 5
+
+[chip] 
+[type] BRIDGE
+[x] 18
+[y] 5
+
+[chip] 
+[type] OR
+[x] 4
+[y] 7
+
