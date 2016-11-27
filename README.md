@@ -44,7 +44,7 @@ Task                              | Production Cost        | Power Usage        
 --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------
 Cold Storage Robot                |                        |                        |                        |
 Scientific Chronometer            |                        |                        |                        |
-Automatic Pet Feeder              |                        |                        |                        |
+Automatic Pet Feeder              | 0 CaitSith2 16/746/35  | 1 CaitSith2 21/500/29  | 2 CaitSith2 21/506/26  | 1 CaitSith2 21/500/29
 Electronic Practice Target        |                        |                        |                        |
 Aquatic Harvesting Robot          |                        |                        |                        |
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
