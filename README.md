@@ -34,11 +34,24 @@ Meat-Based Printer                | 0 CaitSith2 11/69/26  | 0 CaitSith2 11/69/26
 Electronic Door Lock              | 1 CaitSith2 7/176/12  | 0 CaitSith2 8/107/21  | 1 CaitSith2 7/176/12  | 1 CaitSith2 7/176/12
 Deep Sea Sensor Grid              | 0 CaitSith2 7/482/14  | 1 CaitSith2 12/312/28 | 0 CaitSith2 7/482/14  | 0 CaitSith2 7/482/14
 Spoiler Blocking Headphones       | 1 CaitSith2 8/947/14  | 0 CaitSith2 17/572/36 | 2 CaitSith2 11/980/12 | 2 CaitSith2 11/980/12
+Color Coordinating Shoes          |
+Airline Cocktail Mixer            |
+Safetynet Tracking Badge          |
 ---------------------------------------------------------------------------------------------------------------------------------
 Avalon City
 ---------------------------------------------------------------------------------------------------------------------------------
 Task                              | Production Cost       | Power Usage           | Lines Of Code         | Pretty
 --------------------------------- | --------------------- | --------------------- | --------------------- | ---------------------
+Cold Storage Robot                |
+Scientific Chronometer            |
+Automatic Pet Feeder              |
+Electronic Practice Target        |
+Aquatic Harvesting Robot          |
+Sushi-Making Robot                |
+Thorium Reactor Status Monitor    |
+Brain-Computer Interface          |
+Cellular Scaffold Printer         |
+Neural Processor Logic Board      |
 ---------------------------------------------------------------------------------------------------------------------------------
 Hidden Puzzles
 ---------------------------------------------------------------------------------------------------------------------------------
