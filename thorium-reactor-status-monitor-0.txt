@@ -1,0 +1,121 @@
+[name] (L) CaitSith2
+[puzzle] Sz044
+[production-cost] 2300
+[power-usage] 2237
+[lines-of-code] 38
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..14.1415C............
+..9C.15C.A14..........
+..23554A.A14954.......
+..14.1C34B54A94.......
+....14A156156A........
+....14A1555556........
+..1554354.............
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 2
+[code] 
+  mov x2 p1
+  mov x2 p1
+  mov p0 acc
+  mul 4
+  mov acc x1
+  mov x0 x3
+  mov x0 x3
+  mov x0 x3
+  mov x0 x3
+  mov 100 p1
+  slp 1
+
+[chip] 
+[type] LCDR
+[x] 14
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] BANK
+[x] 2
+[y] 3
+[rom] 
+-30,-31,33,34,-30,31,33,-34,30,31,-33,-34,0,0
+
+[chip] 
+[type] BRIDGE
+[x] 8
+[y] 3
+
+[chip] 
+[type] BANK
+[x] 11
+[y] 3
+[rom] 
+-11,-12,-13,-14,11,12,13,14,11,0,0,0,0,0
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 5
+[code] 
+  mov p0 acc
+  mul 5
+  dgt 2
+  mov acc x1
+  mov p1 acc
+  mul 5
+  dgt 2
+  mov acc x1
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 11
+[y] 5
+[code] 
+l:teq p0 100
+- mov p0 x1
+- mov x0 x2
+- mov x0 x2
+- mov x0 x2
+- mov p0 x3
+- mov x0 x2
+- mov x2 x2
+- mov x2 x2
+- mov x2 x2
+- mov x2 x2
+- slp 1
+
+[chip] 
+[type] BANK
+[x] 8
+[y] 6
+[rom] 
+-21,-22,-23,-24,21,22,23,24,21,0,0,0,0,0
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 7
+[code] 
+@ mov 10 x1
+@ mov 20 x1
+@ mov 100 p1
+@ mov 32 x1
+  slx x0
+  mov x0 x1
+
+[chip] 
+[type] NOT
+[x] 6
+[y] 8
+
