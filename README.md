@@ -2,7 +2,7 @@
 ShenzhenIO Solutions as save folder
 
 ## Records
-# Longteng Co. Ltd.
+### Longteng Co. Ltd.
 Task                              | Production Cost        | Power Usage            | Lines Of Code          | Pretty
 --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------
 Fake Surveillance Camera          | 0 Thaui 6/58/5         | 3 Twarmboe 6/57/8      | 2 Thaui 8/60/3         | 0 Thaui 6/58/5
@@ -38,7 +38,7 @@ Airline Cocktail Mixer            | 0 CaitSith2 11/198/31  | 1 CaitSith2 21/119/
 Safetynet Tracking Badge          | 1 CaitSith2 12/424/22  | 0 CaitSith2 23/305/47  | 1 CaitSith2 12/424/22  | 1 CaitSith2 12/424/22
 
 
-# Avalon City
+### Avalon City
 Task                              | Production Cost        | Power Usage            | Lines Of Code          | Pretty
 --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------
 Cold Storage Robot                | 2 CaitSith2 16/393/39  | 1 CaitSith2 26/227/43  | 0 CaitSith2 22/320/38  | 0 CaitSith2 22/320/38
@@ -53,7 +53,7 @@ Cellular Scaffold Printer         |                        |                    
 Neural Processor Logic Board      |                        |                        |                        |
 
 
-# Hidden Puzzles
+### Hidden Puzzles
 Task                               | Production Cost        | Power Usage            | Lines Of Code          | Pretty
 ---------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------
 Shenzhen I/O Trailer (0451)        | 0 CaitSith2 5/331/13   | 1 CaitSith2 25/130/57  | 0 CaitSith2 5/331/13   | 0 CaitSith2 5/331/13
