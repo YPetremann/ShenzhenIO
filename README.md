@@ -8,7 +8,7 @@ Task                              | Production Cost        | Power Usage        
 --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------
 Fake Surveillance Camera          | 0 Thaui 6/58/5         | 3 Twarmboe 6/57/8      | 2 Thaui 8/60/3         | 0 Thaui 6/58/5
 Control Signal Amplifier          | 0 Thaui 3/240/4        | 3 Twarmboe 4/133/3     | 0 Twarmboe 4/133/3     | 0 Thaui 3/240/4
-Diagnostic Pulse Generator        | 0 Thaui 3/142/3        | 3 CaitSith2 5/119/6    | 2 Thaui 8/426/1        | 4 Thaui 5/119/6
+Diagnostic Pulse Generator        | 0 Thaui 3/142/3        | 6 Twarmboe 7/108/13    | 2 Thaui 8/426/1        | 4 Thaui 5/119/6
 Animated Esports Sign             | 0 Thaui 7/264/12       | 3 CaitSith2 9/91/14    | 1 Thaui 8/126/3        | 4 Thaui 9/91/14
 Drinking Game Scorekeeper         | 5 CaitSith2 3/220/8    | 4 CaitSith2 5/147/10   | 3 CaitSith2 6/220/6    | 6 Thaui 6/220/6
 Harmonic Maximization Engine      | 0 Thaui 4/285/7        | 0 Thaui 4/285/7        | 2 Thaui 4/310/6        | 0 Thaui 4/285/7

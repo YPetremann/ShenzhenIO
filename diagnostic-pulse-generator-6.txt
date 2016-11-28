@@ -1,8 +1,8 @@
 [name] (P) Twarmboe
 [puzzle] Sz002
-[production-cost] 900
-[power-usage] 109
-[lines-of-code] 14
+[production-cost] 700
+[power-usage] 108
+[lines-of-code] 13
 
 [traces] 
 ......................
@@ -11,40 +11,34 @@
 ......................
 ......................
 ......................
-...........1D41C......
-............A..2......
-.......154..A.........
-...........16.........
+......................
+...........14154......
+.......154............
+.............14.......
 ......................
 ......................
 ......................
 ......................
 
 [chip] 
-[type] UC4
-[x] 9
-[y] 3
-[code] 
-@ mov 1 p1
-#free slp
-
-[chip] 
-[type] NOTE
-[x] 13
+[type] DX3
+[x] 12
 [y] 4
-[code] 
-OR prevents
-1 from leaking
-through to pulse
+
+[chip] 
+[type] NOT
+[x] 14
+[y] 4
+[rotated] true
 
 [chip] 
 [type] UC6
 [x] 9
 [y] 5
 [code] 
-+ mov 100 p1
++ mov 100 x3
   slp 1
-+ slp p1
++ slp x3
 + teq p0 100
 - slp 3
 - teq p0 100
@@ -55,9 +49,4 @@ through to pulse
 - teq p0 100
 - slp 1
 - teq p0 100
-
-[chip] 
-[type] OR
-[x] 13
-[y] 6
 
