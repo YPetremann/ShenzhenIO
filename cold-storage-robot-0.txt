@@ -1,0 +1,136 @@
+[name] (LD) CaitSith2
+[puzzle] Sz038
+[production-cost] 2200
+[power-usage] 320
+[lines-of-code] 38
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+....14.15C14.155555C..
+.......1CB54.1C....2..
+....14..228...2.1414..
+....94.15574.1541414..
+....A..14154..8.14....
+....35555555556.......
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 5
+[y] 3
+[code] 
+@ teq 0 0
++ slx x2
++ mov x2 dat
++ mov 0 x1
+  mov x1 acc
+  teq x0 dat
++ mov acc x1
++ mov x2 x0
++ mov x1 x3
+
+[chip] 
+[type] BRIDGE
+[x] 8
+[y] 3
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 11
+[y] 3
+[code] 
+  mov 110 x3
+  slx x1
+  mov x1 acc
+  teq p0 0
++ slp acc
+  add 1
+  mov 010 x3
+  slp 1
+  mov 100 x3
+  slp acc
+  slp x3
+
+[chip] 
+[type] BRIDGE
+[x] 14
+[y] 3
+
+[chip] 
+[type] DX3
+[x] 15
+[y] 3
+
+[chip] 
+[type] NOT
+[x] 17
+[y] 3
+[rotated] true
+
+[chip] 
+[type] RAM
+[x] 2
+[y] 4
+
+[chip] 
+[type] NOT
+[x] 17
+[y] 4
+
+[chip] 
+[type] BRIDGE
+[x] 10
+[y] 5
+
+[chip] 
+[type] NOT
+[x] 17
+[y] 5
+
+[chip] 
+[type] RADIO
+[x] 2
+[y] 6
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 5
+[y] 6
+[code] 
+E: slp 1
+S:tcp x0 1
+- jmp E
++ mov x0 x1
++ mov p1 x1
++ jmp E
+  mov 2 p1
+  mov 0 x1
+  mov x0 x1
+
+[chip] 
+[type] UC4
+[x] 11
+[y] 6
+[code] 
+  mov 50 p1
+  slx x0
+  slp p0
+  mov 100 p1
+  slp x1
+  mov 50 p1
+  slp 2
+  mov 0 p1
+  slp x1
+
