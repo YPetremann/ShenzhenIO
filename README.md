@@ -13,7 +13,7 @@ Animated Esports Sign             | 0 Thaui 7/264/12       | 3 CaitSith2 9/91/14
 Drinking Game Scorekeeper         | 5 CaitSith2 3/220/8    | 4 CaitSith2 5/147/10   | 3 CaitSith2 6/220/6    | 6 Thaui 6/220/6
 Harmonic Maximization Engine      | 0 Thaui 4/285/7        | 0 Thaui 4/285/7        | 2 Thaui 4/310/6        | 0 Thaui 4/285/7
 Passive Infrared Sensor           | 1 Thaui 6/296/10       | 4 CaitSith2 12/182/19  | 3 CaitSith2 6/301/7    | 5 Thaui 6/301/7
-Virtual Reality Buzzer            | 0 Thaui 3/134/6        | 6 Twarmboe 9/85/14     | 7 Twarmboe 14/721/2    | 5 Thaui 6/177/3
+Virtual Reality Buzzer            | 0 Thaui 3/134/6        | 6 Twarmboe 7/84/13     | 7 Twarmboe 14/721/2    | 5 Thaui 6/177/3
 Wireless Game Controller          | 4 Thaui 6/244/9        | 3 CaitSith2 8/99/8     | 4 CaitSith2 8/190/6    | 3 CaitSith2 8/99/8
 Laser Tag Equipment               | 8 Twarmboe 6/219/9     | 9 Twarmboe 14/140/8    | 7 CaitSith2 14/281/5   | 0 Thaui 7/399/13
 Color Changing Vape Pen           | 3 CaitSith2 8/221/15   | 3 CaitSith2 8/221/15   | 4 CaitSith2 8/234/13   | 0 Thaui 9/357/23
