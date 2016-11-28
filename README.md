@@ -42,7 +42,7 @@ Safetynet Tracking Badge          | 1 CaitSith2 12/424/22  | 0 CaitSith2 23/305/
 Task                              | Production Cost        | Power Usage            | Lines Of Code          | Pretty
 --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------
 Cold Storage Robot                | 2 CaitSith2 16/393/39  | 1 CaitSith2 26/227/43  | 0 CaitSith2 22/320/38  | 0 CaitSith2 22/320/38
-Scientific Chronometer            |                        |                        |                        |
+Scientific Chronometer            | 0 CaitSith2 8/658/23   | 1 CaitSith2 10/451/25  | 2 CaitSith2 10/559/20  | 2 CaitSith2 10/559/20
 Automatic Pet Feeder              | 0 CaitSith2 16/746/35  | 1 CaitSith2 21/500/29  | 2 CaitSith2 21/506/26  | 1 CaitSith2 21/500/29
 Electronic Practice Target        | 1 CaitSith2 24/1143/49 | 0 CaitSith2 26/1061/51 | 1 CaitSith2 24/1143/49 | 1 CaitSith2 24/1143/49
 Aquatic Harvesting Robot          | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99
