@@ -45,7 +45,7 @@ Cold Storage Robot                | 2 CaitSith2 16/393/39  | 1 CaitSith2 26/227/
 Scientific Chronometer            |                        |                        |                        |
 Automatic Pet Feeder              | 0 CaitSith2 16/746/35  | 1 CaitSith2 21/500/29  | 2 CaitSith2 21/506/26  | 1 CaitSith2 21/500/29
 Electronic Practice Target        |                        |                        |                        |
-Aquatic Harvesting Robot          |                        |                        |                        |
+Aquatic Harvesting Robot          | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
 Thorium Reactor Status Monitor    | 2 CaitSith2 20/2233/40 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
