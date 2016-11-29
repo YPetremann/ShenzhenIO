@@ -1,8 +1,8 @@
 [name] (C) CaitSith2
 [puzzle] Sz044
-[production-cost] 2000
-[power-usage] 2233
-[lines-of-code] 40
+[production-cost] 1800
+[power-usage] 4243
+[lines-of-code] 45
 
 [traces] 
 ......................
@@ -10,41 +10,23 @@
 ......................
 ......................
 ......................
-..14..955C............
-..9C.16..A14..........
-..23554..A14954.......
-..14.1554A14A94.......
-..141C...A156A........
-..1416.9435556........
-..155556..............
+..155554..............
+.........155C.........
+..155555C15CA.........
+..1555C.354AA94.......
+......A..156AA........
+......34.95576........
+..14.15556............
 ......................
 ......................
-
-[chip] 
-[type] NOTE
-[x] 8
-[y] 1
-[code] 
-I expect Thaui to
-take over the Cost
-score soon enough
-
-:)
-
-[chip] 
-[type] LCDR
-[x] 14
-[y] 2
-[is-puzzle-provided] true
 
 [chip] 
 [type] UC6
-[x] 8
-[y] 3
+[x] 3
+[y] 2
 [code] 
-@ mov 100 p1
-  mov x0 p1
-  mov x0 p1
+@ mov 32 x2
+  mov p0 dat
   mov -30 x2
   mov 31 x2
   mov 33 x2
@@ -54,64 +36,62 @@ score soon enough
 + mov -33 x2
 - mov -31 x2
 - mov 34 x2
-  mov 100 p1
-  slp 1
+s: slp 1
+  teq p0 dat
++ jmp s
 
 [chip] 
-[type] BANK
-[x] 11
-[y] 3
-[rom] 
--11,-12,-13,-14,11,12,13,14,11,0,0,0,0,0
-
-[chip] 
-[type] UC4
-[x] 3
-[y] 5
-[code] 
-  mov p0 acc
-  mul 5
-  dgt 2
-  mov acc x1
-  mov p1 acc
-  mul 5
-  dgt 2
-  mov acc x1
-  slp 1
+[type] LCDR
+[x] 14
+[y] 2
+[is-puzzle-provided] true
 
 [chip] 
 [type] UC6
-[x] 11
-[y] 5
+[x] 7
+[y] 3
 [code] 
-@ mov 10 x2
-l:teq p0 100
-- mov p0 x1
-- mov x0 x2
-- mov p0 x3
-- mov x0 x2
-- mov x0 x2
-- mov x0 x2
-- mov x2 x2
-- mov x2 x2
-- mov x2 x2
-- mov x2 x2
+@ mov 20 dat
+  teq dat 20
++ mov 10 dat
+- mov 20 dat
+  mov dat x3
++ mov p1 acc
+- mov p0 acc
+  mul 5
+  dgt 2
+  add dat
+  mov acc x3
++ mov -14 x3
+- mov -24 x3
 - slp 1
 
 [chip] 
-[type] BANK
-[x] 8
-[y] 6
-[rom] 
--21,-22,-23,-24,21,22,23,24,21,0,0,0,0,0
+[type] UC6
+[x] 10
+[y] 5
+[code] 
+  slx x1
+  mov x1 acc
+  mov x1 dat
+A:tlt acc dat
++ add 1
++ mov acc x0
++ jmp A
+  mul -1
+  mov x1 dat
+B:tgt acc dat
++ sub 1
++ mov acc x0
++ jmp B
 
 [chip] 
 [type] UC4
-[x] 3
+[x] 7
 [y] 7
 [code] 
+@ mov 10 x1
 @ mov 20 x1
-@ mov 32 x1
   slx x0
   mov x0 x1
 

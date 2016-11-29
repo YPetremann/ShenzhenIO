@@ -47,7 +47,7 @@ Automatic Pet Feeder              | 0 CaitSith2 16/746/35  | 1 CaitSith2 21/500/
 Electronic Practice Target        | 1 CaitSith2 24/1143/49 | 0 CaitSith2 26/1061/51 | 1 CaitSith2 24/1143/49 | 1 CaitSith2 24/1143/49
 Aquatic Harvesting Robot          | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
-Thorium Reactor Status Monitor    | 2 CaitSith2 20/2233/40 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
+Thorium Reactor Status Monitor    | 2 CaitSith2 18/4243/45 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
 Cellular Scaffold Printer         |                        |                        |                        |
 Neural Processor Logic Board      |                        |                        |                        |
