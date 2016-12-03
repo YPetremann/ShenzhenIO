@@ -1,0 +1,129 @@
+[name] (CLD) CaitSith2
+[puzzle] Sz041
+[production-cost] 2400
+[power-usage] 1143
+[lines-of-code] 49
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+..154154.1555554..1C..
+..9C..14.1554.1555C2..
+..23554..1554.154.34..
+..8..14..1C94..15C14..
+..34.155556355554A94..
+.................22...
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 3
+[y] 3
+[code] 
+  slx x3
+  mov p1 acc
+  sub 50
+  mul acc
+  mov acc dat
+  mov p0 acc
+  sub 50
+  mul acc
+  add dat
+  dgt x3
+  mov acc x2
+
+[chip] 
+[type] UC6
+[x] 16
+[y] 3
+[code] 
+  mov x0 dat
+  tgt dat 0
+- jmp E
+  teq dat 8
++ mov 4 acc
+L:mov p0 x3
+  mov x3 x1
+  mov p1 x3
+  mov x3 x2
++ sub 1
++ slp 2
+E:- slp 1
++ tgt acc 0
++ jmp L
+
+[chip] 
+[type] BRIDGE
+[x] 6
+[y] 4
+
+[chip] 
+[type] BANK
+[x] 7
+[y] 4
+[rom] 
+4,2,2,2,1,1,1,1,1,-2,-2,-2,-2,-2
+
+[chip] 
+[type] UC6
+[x] 12
+[y] 4
+[code] 
+  slx x0
+  mov x0 dat
+  teq dat 1
++ mov 8 p1
+- teq dat 5
++ mov 8 acc
+  add x1
+  tlt dat 5
++ mov acc p0
+- mov acc p1
+  mov dat x3
+
+[chip] 
+[type] BRIDGE
+[x] 19
+[y] 4
+
+[chip] 
+[type] BRIDGE
+[x] 15
+[y] 5
+
+[chip] 
+[type] DX3
+[x] 4
+[y] 6
+[rotated] true
+
+[chip] 
+[type] UC4X
+[x] 7
+[y] 6
+[code] 
+  teq x0 0
+- mov 2 x1
+- add 1
+- mov acc x2
++ mov acc x3
+- tlt acc 8
+- mov 0 acc
+- slp 8
++ slp 1
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 7
+[code] 
+  slx x1
+  mov x1 acc
+  sub 8
+  mov acc x1
+

@@ -1,8 +1,8 @@
 [name] (PD) CaitSith2
 [puzzle] Sz016
 [production-cost] 800
-[power-usage] 243
-[lines-of-code] 11
+[power-usage] 199
+[lines-of-code] 10
 
 [traces] 
 ......................
@@ -38,10 +38,9 @@
 + dst x2 dat
 + mov acc x3
 + slp x0
-  teq x0 666
-+ mov 000 acc
-+ mov acc x3
-  slp 1
+- slp 1
+- teq x0 2
+- mov x3 acc
 
 [chip] 
 [type] DX3
@@ -53,5 +52,5 @@
 [x] 8
 [y] 5
 [rom] 
-1,1,1,1,1,666,1,1,1,1,1,1,1,1
+2,2,2,666,2,2,2,2,2,2,2,2,2,2
 

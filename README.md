@@ -22,7 +22,7 @@ Personal Sandwich Maker           | 0 CaitSith2 6/87/14    | 0 CaitSith2 6/87/14
 Carbine Target Illuminator        | 2 CaitSith2 8/205/11   | 1 CaitSith2 11/162/11  | 0 CaitSith2 11/174/9   | 1 CaitSith2 11/162/11
 Haunted Doll                      | 0 CaitSith2 9/411/11   | 1 CaitSith2 19/147/37  | 0 CaitSith2 9/411/11   | 0 CaitSith2 9/411/11
 Aquaponics Maintenance Robot      | 0 CaitSith2 8/162/22   | 1 CaitSith2 11/149/23  | 2 CaitSith2 9/178/19   | 1 CaitSith2 11/149/23
-Remote Kill Switch                | 0 CaitSith2 7/258/12   | 2 CaitSith2 8/243/11   | 1 CaitSith2 8/324/7    | 2 CaitSith2 8/243/11 
+Remote Kill Switch                | 0 CaitSith2 7/258/12   | 2 CaitSith2 8/199/10   | 1 CaitSith2 8/324/7    | 2 CaitSith2 8/199/10 
 Smart Grid Control Router         | 0 CaitSith2 5/315/9    | 1 CaitSith2 15/172/42  | 0 CaitSith2 5/315/9    | 0 CaitSith2 5/315/9
 Pocket I Ching Oracle             | 1 CaitSith2 8/135/14   | 0 CaitSith2 9/100/14   | 2 CaitSith2 9/177/12   | 0 CaitSith2 9/100/14
 Precision Food Scale              | 1 CaitSith2 5/402/11   | 0 CaitSith2 5/303/14   | 1 CaitSith2 5/402/11   | 1 CaitSith2 5/402/11
@@ -42,12 +42,12 @@ Safetynet Tracking Badge          | 1 CaitSith2 12/424/22  | 0 CaitSith2 23/305/
 Task                              | Production Cost        | Power Usage            | Lines Of Code          | Pretty
 --------------------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------
 Cold Storage Robot                | 2 CaitSith2 16/393/39  | 1 CaitSith2 26/227/43  | 0 CaitSith2 22/320/38  | 0 CaitSith2 22/320/38
-Scientific Chronometer            |                        |                        |                        |
+Scientific Chronometer            | 0 CaitSith2 8/658/23   | 1 CaitSith2 10/451/25  | 2 CaitSith2 10/559/20  | 2 CaitSith2 10/559/20
 Automatic Pet Feeder              | 0 CaitSith2 16/746/35  | 1 CaitSith2 21/500/29  | 2 CaitSith2 21/506/26  | 1 CaitSith2 21/500/29
-Electronic Practice Target        |                        |                        |                        |
-Aquatic Harvesting Robot          |                        |                        |                        |
+Electronic Practice Target        | 1 CaitSith2 24/1143/49 | 0 CaitSith2 26/1061/51 | 1 CaitSith2 24/1143/49 | 1 CaitSith2 24/1143/49
+Kelp Harvesting Robot             |                        |                        |                        |
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
-Thorium Reactor Status Monitor    | 2 CaitSith2 20/2233/40 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
+Thorium Reactor Status Monitor    | 2 CaitSith2 18/4243/45 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
 Cellular Scaffold Printer         |                        |                        |                        |
 Neural Processor Logic Board      |                        |                        |                        |
@@ -58,6 +58,7 @@ Task                               | Production Cost        | Power Usage       
 ---------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------
 Shenzhen I/O Trailer (0451)        | 0 CaitSith2 5/331/13   | 1 CaitSith2 25/130/57  | 0 CaitSith2 5/331/13   | 0 CaitSith2 5/331/13
 Personal Sandwich Assembler (2241) | 1 CaitSith2 15/136/30  | 0 CaitSith2 16/133/29  | 0 CaitSith2 16/133/29  | 0 CaitSith2 16/133/29
+Aquatic Harvesting Robot (3113)    | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99
 
 
 

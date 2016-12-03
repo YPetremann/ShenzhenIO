@@ -1,0 +1,90 @@
+[name] (LD) CaitSith2
+[puzzle] Sz039
+[production-cost] 1000
+[power-usage] 559
+[lines-of-code] 20
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......................
+..........14..........
+.............154......
+....954......1C.......
+..94A1555555556.......
+..2.2.................
+......................
+......................
+
+[chip] 
+[type] LCDN
+[x] 15
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 3
+[code] 
+@ mov -100 acc
+S:tcp p0 p1
++ not
+- teq acc 100
+- mov -100 x1
+- mov x1 acc
+  teq acc -100
+- mov acc x1
+  slp 1
+
+[chip] 
+[type] UC6
+[x] 11
+[y] 4
+[code] 
+S:slx x2
+  tcp x2 0
+- jmp R
+  mov acc x3
++ add x0
+  jmp S
+R:teq acc 0
++ mov -100 x2
++ mov -999 x3
+- mov 000 x2
+- mov 0 acc
+
+[chip] 
+[type] NOTE
+[x] 3
+[y] 5
+[code] 
+acc = -100 = off
+acc = 0 = pause
+acc = 100 = run
+
+[chip] 
+[type] BANK
+[x] 8
+[y] 5
+[rom] 
+0,1,0,1,0,1,0,1,0,1,0,1,0,1
+
+[chip] 
+[type] NOTE
+[x] 3
+[y] 7
+[code] 
+start ->
+if off then pause
+if run than pause
+if pause then run
+
+reset ->
+if run then nothin
+otherwise ask
+
