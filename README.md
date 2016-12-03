@@ -45,7 +45,7 @@ Cold Storage Robot                | 2 CaitSith2 16/393/39  | 1 CaitSith2 26/227/
 Scientific Chronometer            | 0 CaitSith2 8/658/23   | 1 CaitSith2 10/451/25  | 2 CaitSith2 10/559/20  | 2 CaitSith2 10/559/20
 Automatic Pet Feeder              | 0 CaitSith2 16/746/35  | 1 CaitSith2 21/500/29  | 2 CaitSith2 21/506/26  | 1 CaitSith2 21/500/29
 Electronic Practice Target        | 1 CaitSith2 24/1143/49 | 0 CaitSith2 26/1061/51 | 1 CaitSith2 24/1143/49 | 1 CaitSith2 24/1143/49
-Aquatic Harvesting Robot          | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99
+Kelp Harvesting Robot             |                        |                        |                        |
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
 Thorium Reactor Status Monitor    | 2 CaitSith2 18/4243/45 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
@@ -58,6 +58,7 @@ Task                               | Production Cost        | Power Usage       
 ---------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------
 Shenzhen I/O Trailer (0451)        | 0 CaitSith2 5/331/13   | 1 CaitSith2 25/130/57  | 0 CaitSith2 5/331/13   | 0 CaitSith2 5/331/13
 Personal Sandwich Assembler (2241) | 1 CaitSith2 15/136/30  | 0 CaitSith2 16/133/29  | 0 CaitSith2 16/133/29  | 0 CaitSith2 16/133/29
+Aquatic Harvesting Robot (3113)    | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99 | 0 CaitSith2 38/7211/99
 
 
 
