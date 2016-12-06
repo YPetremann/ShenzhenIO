@@ -1,0 +1,128 @@
+[name] (CD) CaitSith2
+[puzzle] Sz046
+[production-cost] 2400
+[power-usage] 906
+[lines-of-code] 54
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+.........15555554.1C..
+...9554.1555555D4..2..
+...A....154....35554..
+..16.....14.......14..
+.....14.154.......14..
+.....14.1495554.1414..
+........156...........
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 2
+[code] 
+S:slx x3
+  mov x3 acc
+  tlt p1 5
++ mov p1 x2
++ jmp S
+  mov p1 x1
+  tlt acc 3
+- sub 3
+- mov x0 null
+  mov acc dat
+  mov x0 acc
+  dgt dat
+  mov acc x2
+
+[chip] 
+[type] UC6
+[x] 14
+[y] 2
+[code] 
+t:slx x1
+  mov x1 acc
+  teq acc 0
++ jmp t
+  mov 10 x3
+  tcp acc 4
+- mov 100 x3
++ mov 1 x3
+  slp 1
+  mov 0 x3
+
+[chip] 
+[type] BANK
+[x] 3
+[y] 3
+[rom] 
+20,0,0,40,0,0,242,424,226,626,220,20,6,606
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 3
+
+[chip] 
+[type] DX3
+[x] 17
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 4
+[code] 
+S:slx x0
+  mov x0 p0
+A:mov acc x1
+  add 1
+  tlt acc 6
++ slp 1
++ jmp A
+  slx x0
+  mov x0 p0
+B:sub 1
+  mov acc x1
+  tgt acc 0
++ slp 1
++ jmp B
+
+[chip] 
+[type] UC4
+[x] 6
+[y] 6
+[code] 
+  mov 50 p1
+  slx x0
+  mov x0 acc
+  teq acc -1
++ gen p1 0 6
+- mul 2
+- mov acc x1
+- slp 6
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 6
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 7
+[code] 
+@ mov 50 p1
+  slx x0
+  gen p1 5 0
+  mov 50 p1
+  gen p0 1 0
+  slx x0
+  gen p1 0 5
+  mov 50 p1
+  gen p0 1 0
+

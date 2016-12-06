@@ -49,7 +49,7 @@ Kelp Harvesting Robot             |                        |                    
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
 Thorium Reactor Status Monitor    | 2 CaitSith2 18/4243/45 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
-Cellular Scaffold Printer         |                        |                        |                        |
+Cellular Scaffold Printer         | 0 CaitSith2 24/906/54  | 1 CaitSith2 26/836/54  | 2 CaitSith2 26/890/49  | 0 CaitSith2 24/906/54
 Neural Processor Logic Board      |                        |                        |                        |
 
 
