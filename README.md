@@ -11,7 +11,7 @@ Diagnostic Pulse Generator        | 0 Thaui 3/142/3        | 6 Twarmboe 7/108/13
 Animated Esports Sign             | 0 Thaui 7/264/12       | 3 CaitSith2 9/91/14    | 1 Thaui 8/126/3        | 4 Thaui 9/91/14
 Drinking Game Scorekeeper         | 5 CaitSith2 3/220/8    | 4 CaitSith2 5/147/10   | 3 CaitSith2 6/220/6    | 6 Thaui 6/220/6
 Harmonic Maximization Engine      | 0 Thaui 4/285/7        | 0 Thaui 4/285/7        | 2 Thaui 4/310/6        | 0 Thaui 4/285/7
-Passive Infrared Sensor           | 1 Thaui 6/296/10       | 4 CaitSith2 12/182/19  | 3 CaitSith2 6/301/7    | 5 Thaui 6/301/7
+Passive Infrared Sensor           | 1 Thaui 6/296/10       | 4 CaitSith2 17/159/25  | 3 CaitSith2 6/301/7    | 5 Thaui 6/301/7
 Virtual Reality Buzzer            | 0 Thaui 3/134/6        | 6 Twarmboe 7/84/13     | 7 Twarmboe 14/721/2    | 5 Thaui 6/177/3
 Wireless Game Controller          | 4 Thaui 6/244/9        | 3 CaitSith2 8/99/8     | 4 CaitSith2 8/190/6    | 3 CaitSith2 8/99/8
 Laser Tag Equipment               | 8 Twarmboe 6/219/9     | 9 Twarmboe 14/140/8    | 7 CaitSith2 14/281/5   | 0 Thaui 7/399/13
@@ -20,7 +20,7 @@ Unknown Optimization Device       | 0 CaitSith2 6/655/13   | 0 CaitSith2 6/655/1
 Token-Based Payment Kiosk         | 0 CaitSith2 9/327/22   | 1 CaitSith2 16/268/26  | 2 CaitSith2 14/299/18  | 2 CaitSith2 14/299/18
 Personal Sandwich Maker           | 0 CaitSith2 6/87/14    | 0 CaitSith2 6/87/14    | 1 CaitSith2 8/89/13    | 0 CaitSith2 6/87/14
 Carbine Target Illuminator        | 2 CaitSith2 8/205/11   | 1 CaitSith2 11/162/11  | 0 CaitSith2 11/174/9   | 1 CaitSith2 11/162/11
-Haunted Doll                      | 0 CaitSith2 9/411/11   | 1 CaitSith2 19/147/37  | 0 CaitSith2 9/411/11   | 0 CaitSith2 9/411/11
+Haunted Doll                      | 0 CaitSith2 9/411/11   | 1 CaitSith2 19/141/39  | 0 CaitSith2 9/411/11   | 0 CaitSith2 9/411/11
 Aquaponics Maintenance Robot      | 0 CaitSith2 8/162/22   | 1 CaitSith2 11/149/23  | 2 CaitSith2 9/178/19   | 1 CaitSith2 11/149/23
 Remote Kill Switch                | 0 CaitSith2 7/258/12   | 2 CaitSith2 8/199/10   | 1 CaitSith2 8/324/7    | 2 CaitSith2 8/199/10 
 Smart Grid Control Router         | 0 CaitSith2 5/315/9    | 1 CaitSith2 15/172/42  | 0 CaitSith2 5/315/9    | 0 CaitSith2 5/315/9
@@ -49,7 +49,7 @@ Kelp Harvesting Robot             |                        |                    
 Sushi-Making Robot                | 1 CaitSith2 12/672/32  | 0 CaitSith2 18/528/37  | 1 CaitSith2 12/672/32  | 1 CaitSith2 12/672/32
 Thorium Reactor Status Monitor    | 2 CaitSith2 18/4243/45 | 1 CaitSith2 22/544/40  | 0 CaitSith2 23/2237/38 | 1 CaitSith2 22/544/40
 Brain-Computer Interface          | 0 CaitSith2 27/6900/54 | 1 CaitSith2 32/2768/64 | 0 CaitSith2 27/6900/54 | 0 CaitSith2 27/6900/54
-Cellular Scaffold Printer         |                        |                        |                        |
+Cellular Scaffold Printer         | 0 CaitSith2 24/906/54  | 1 CaitSith2 26/836/54  | 2 CaitSith2 26/890/49  | 0 CaitSith2 24/906/54
 Neural Processor Logic Board      |                        |                        |                        |
 
 

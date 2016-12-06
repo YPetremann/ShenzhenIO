@@ -1,0 +1,135 @@
+[name] (P) CaitSith2
+[puzzle] Sz046
+[production-cost] 2600
+[power-usage] 836
+[lines-of-code] 54
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+........155555554.1C..
+...94.1555555555C..2..
+...A..1554..14..3554..
+..16...954.154....14..
+.....14A14.14.....14..
+.....14A1555554.1414..
+.......354............
+......................
+......................
+
+[chip] 
+[type] UC6
+[x] 6
+[y] 2
+[code] 
+S:slx x2
+  mov x2 acc
+  tlt p1 5
++ mov p1 x3
++ jmp S
+  mov p1 x1
+  tlt acc 3
+- sub 3
+- mov x0 null
+  mov acc dat
+  mov x0 acc
+  dgt dat
+  mov acc x3
+
+[chip] 
+[type] UC6
+[x] 14
+[y] 2
+[code] 
+t:slx x1
+  mov x1 acc
+  teq acc 0
++ jmp t
+  mov 10 x3
+  tcp acc 4
+- mov 100 x3
++ mov 1 x3
+  slp 1
+  mov 0 x3
+
+[chip] 
+[type] BANK
+[x] 3
+[y] 3
+[rom] 
+20,0,0,40,0,0,242,424,226,626,220,20,6,606
+
+[chip] 
+[type] DX3
+[x] 17
+[y] 3
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 4
+[code] 
+  add 6
+  teq acc 18
++ sub 12
++ mov 0 x2
+S:slx x0
+  mov x0 p0
+L:mov x3 x1
+  slp 1
+  mov x3 x1
+  slp 1
+  mov x3 x1
+  teq x2 acc
+- slp 1
+- jmp L
+
+[chip] 
+[type] BRIDGE
+[x] 12
+[y] 4
+
+[chip] 
+[type] BANK
+[x] 13
+[y] 5
+[rom] 
+0,1,2,3,4,5,5,4,3,2,1,0,0,0
+
+[chip] 
+[type] UC4
+[x] 4
+[y] 6
+[code] 
+@ mov 50 p1
+  slx x0
+  mov x0 acc
+  tlt acc p1
+- mul 2
+- mov acc x1
+- mov 50 p1
+  slp 6
++ mov 50 p1
+
+[chip] 
+[type] BRIDGE
+[x] 8
+[y] 6
+
+[chip] 
+[type] UC4
+[x] 16
+[y] 7
+[code] 
+@ mov 50 p1
+  slx x0
+  gen p1 5 0
+  mov 50 p1
+  gen p0 1 0
+  gen p1 0 5
+  mov 50 p1
+  gen p0 1 0
+

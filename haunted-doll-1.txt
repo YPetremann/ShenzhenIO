@@ -1,8 +1,8 @@
 [name] (P) CaitSith2
 [puzzle] Sz008
 [production-cost] 1900
-[power-usage] 147
-[lines-of-code] 37
+[power-usage] 141
+[lines-of-code] 39
 
 [traces] 
 ......................
@@ -10,62 +10,57 @@
 ......................
 ......................
 ......................
-.......14.155555C.....
-.......14......1E.....
-.......94.1555C.A.....
-......17555554A.A.....
-............14A16.....
-............14A.......
-..............354.....
+.......14..955554.....
+.......14.16.1554.....
+.......15C15C.954.....
+.......14B54A.A.8.....
+.......14A156.A.A.....
+.........A15556.A.....
+.........35555556.....
 ......................
 ......................
 
 [chip] 
 [type] UC6
-[x] 13
-[y] 2
+[x] 8
+[y] 3
 [code] 
-@ slx x2
-@ teq x2 1
-- slx x2
-- teq x2 1   
-+ mov x0 p1
-+ slp 1
-+ mov x0 p1
-+ tgt x1 0
-+ slp 1
-- slp 4
-- mov 0 p1
-t:- slx x2
-- mov x2 acc
+  teq x1 0
+- slp 1
+- mov x0 p1
+- slp 1
++ slx x3
++ mov x3 acc
+  mov x0 p1
+  slp 1
+  mov x0 p1
+  slp 1
+  mov x0 p1
+  slp 1
+  mov x0 p1
 
 [chip] 
 [type] BANK
-[x] 10
-[y] 3
-[rom] 
-100,80,41,14,14,41,69,74,54,27,19,40,75,50
-
-[chip] 
-[type] RND
 [x] 5
-[y] 5
-[is-puzzle-provided] true
+[y] 4
+[rom] 
+100,80,41,14,14,41,69,74,54,27,19,40,75,0
 
 [chip] 
 [type] UC6
-[x] 13
+[x] 11
 [y] 5
 [code] 
-@ mov 50 p1
+@ mov 50 p0
 @ slp 1
 @ mov 3 acc
-  tlt p0 3
-+ mov p0 x1
-+ sub p0
-+ mov 0 p1
-+ slp 17
-+ mov 50 p1
+  tlt p1 3
++ mov p1 x0
++ sub p1
++ mov 0 p0
++ slp 13
++ mov 50 p0
++ slp 4
 + teq acc 0
 + slx x1
   slp 1
@@ -75,23 +70,35 @@ t:- slx x2
 [x] 8
 [y] 6
 [code] 
-@ slx x2
-@ teq p0 1
-+ slx x2  
-+ teq p0 1
-- mov x0 p1
+@ slx x3
+@ teq x3 1
++ mov 1 x2
++ slx x3
++ teq x3 1
+- mov x0 p0
 - slp 1
-- mov x0 p1
+- mov x0 p0
 - teq x1 0
 - slp 1
-+ slp 4
-+ mov 0 p1
++ slx x3
++ mov x3 x2
 + slp 999
+
+[chip] 
+[type] BRIDGE
+[x] 16
+[y] 6
 
 [chip] 
 [type] BANK
 [x] 5
 [y] 7
 [rom] 
-16,36,42,14,10,58,100,76,26,28,70,80,42,50
+16,36,42,14,10,58,100,76,26,28,70,80,42,0
+
+[chip] 
+[type] RND
+[x] 14
+[y] 7
+[is-puzzle-provided] true
 
