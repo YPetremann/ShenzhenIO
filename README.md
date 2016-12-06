@@ -20,7 +20,7 @@ Unknown Optimization Device       | 0 CaitSith2 6/655/13   | 0 CaitSith2 6/655/1
 Token-Based Payment Kiosk         | 0 CaitSith2 9/327/22   | 1 CaitSith2 16/268/26  | 2 CaitSith2 14/299/18  | 2 CaitSith2 14/299/18
 Personal Sandwich Maker           | 0 CaitSith2 6/87/14    | 0 CaitSith2 6/87/14    | 1 CaitSith2 8/89/13    | 0 CaitSith2 6/87/14
 Carbine Target Illuminator        | 2 CaitSith2 8/205/11   | 1 CaitSith2 11/162/11  | 0 CaitSith2 11/174/9   | 1 CaitSith2 11/162/11
-Haunted Doll                      | 0 CaitSith2 9/411/11   | 1 CaitSith2 19/147/37  | 0 CaitSith2 9/411/11   | 0 CaitSith2 9/411/11
+Haunted Doll                      | 0 CaitSith2 9/411/11   | 1 CaitSith2 19/141/39  | 0 CaitSith2 9/411/11   | 0 CaitSith2 9/411/11
 Aquaponics Maintenance Robot      | 0 CaitSith2 8/162/22   | 1 CaitSith2 11/149/23  | 2 CaitSith2 9/178/19   | 1 CaitSith2 11/149/23
 Remote Kill Switch                | 0 CaitSith2 7/258/12   | 2 CaitSith2 8/199/10   | 1 CaitSith2 8/324/7    | 2 CaitSith2 8/199/10 
 Smart Grid Control Router         | 0 CaitSith2 5/315/9    | 1 CaitSith2 15/172/42  | 0 CaitSith2 5/315/9    | 0 CaitSith2 5/315/9
