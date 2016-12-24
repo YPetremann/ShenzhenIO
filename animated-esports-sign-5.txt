@@ -1,0 +1,102 @@
+[name] (P) zzymyn
+[puzzle] Sz001
+[production-cost] 1600
+[power-usage] 82
+[lines-of-code] 19
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+...........15555C.....
+......1C.1414..8A.....
+.......3C..15D5EA.....
+......14A1554A.A2.....
+........349416.34.....
+....1C1C.8A.9541C.....
+.....343563421556.....
+......................
+......................
+
+[chip] 
+[type] NOT
+[x] 5
+[y] 3
+[rotated] true
+
+[chip] 
+[type] DX3
+[x] 7
+[y] 3
+[rotated] true
+
+[chip] 
+[type] BRIDGE
+[x] 9
+[y] 3
+
+[chip] 
+[type] XOR
+[x] 14
+[y] 3
+[rotated] true
+
+[chip] 
+[type] BRIDGE
+[x] 16
+[y] 3
+
+[chip] 
+[type] NOT
+[x] 11
+[y] 4
+[rotated] true
+
+[chip] 
+[type] NOT
+[x] 5
+[y] 5
+
+[chip] 
+[type] BRIDGE
+[x] 12
+[y] 5
+
+[chip] 
+[type] UC6
+[x] 4
+[y] 6
+[code] 
+@ slp x3
+  mov 100 x3
+  slp 1
+  slp x3
+  mov 100 x3
+  slp 1
+  slp x3
+  mov 100 x3
+  slp 6
+
+[chip] 
+[type] UC6
+[x] 7
+[y] 6
+[code] 
+  slp 6
+  mov x1 x3
+  slp 1
+  mov 111 x3
+  slp 1
+  mov 101 x3
+  slp 1
+  mov 11 x3
+  slp 1
+  mov 0 x3
+
+[chip] 
+[type] DX3
+[x] 10
+[y] 6
+
