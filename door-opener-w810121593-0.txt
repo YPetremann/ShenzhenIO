@@ -1,0 +1,77 @@
+[name] New design 1
+[puzzle] w810121593
+[production-cost] 1400
+[power-usage] 492
+[lines-of-code] 24
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+......................
+......................
+.....14.14.14.........
+.....14.1C.14.........
+........16....8.......
+.......954....A.......
+.....14A1555556.......
+.......354............
+......................
+
+[chip] 
+[type] UC4
+[x] 6
+[y] 1
+[code] 
+@ mov x0 acc
+@ mul 10
+@ add x0
+@ mul 10
+@ add x0
+  slx x1
+  teq x1 acc
++ gen p1 5 0
+
+[chip] 
+[type] UC4X
+[x] 6
+[y] 3
+[code] 
+slx x3
+mov x3 acc
+mul 10
+add x3
+mul 10
+add x3
+mov x3 null 
+mov acc x2
+
+[chip] 
+[type] UC4X
+[x] 6
+[y] 5
+[code] 
+slx x0
+mov x0 x3
+mov x3 acc
+add x1
+mov acc x2
+
+[chip] 
+[type] UC4X
+[x] 9
+[y] 5
+[code] 
+slx x0
+mov x0 x3
+mov x2 x0
+
+[chip] 
+[type] BANK
+[x] 12
+[y] 5
+[rom] 
+0,0,3,6,0,0,0,0,0,0,0,0,0,0
+

@@ -1,4 +1,4 @@
-[name] (YPD) THAUI
+[name] (CD) ThAUI
 [puzzle] Sz002
 [production-cost] 300
 [power-usage] 142

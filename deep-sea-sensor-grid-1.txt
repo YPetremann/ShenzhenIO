@@ -2,7 +2,7 @@
 [puzzle] Sz021
 [production-cost] 1200
 [power-usage] 312
-[lines-of-code] 28
+[lines-of-code] 27
 
 [traces] 
 ......................

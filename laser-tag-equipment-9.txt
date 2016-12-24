@@ -39,9 +39,6 @@
 + slp 1
 + mov acc x1
   slp 1
-  
-  
-  
 
 [chip] 
 [type] DIAL7

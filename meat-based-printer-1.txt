@@ -58,7 +58,6 @@
 + mov x0 x3
   mov x2 x1
   slp 1
-  
 
 [chip] 
 [type] BANK
