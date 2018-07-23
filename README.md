@@ -35,7 +35,7 @@ Deep Sea Sensor Grid              | 0 CaitSith2 7/482/14   | 1 CaitSith2 12/312/
 Spoiler Blocking Headphones       | 1 CaitSith2 8/947/14   | 0 CaitSith2 17/572/36  | 2 CaitSith2 11/980/12  | 2 CaitSith2 11/980/12
 Color Coordinating Shoes          | 1 CaitSith2 22/1037/43 | 0 CaitSith2 26/882/43  | 2 CaitSith2 24/986/38  | 1 CaitSith2 22/1037/43
 Airline Cocktail Mixer            | 0 CaitSith2 11/198/31  | 1 CaitSith2 21/119/24  | 2 CaitSith2 15/138/17  | 0 CaitSith2 11/198/31
-Safetynet Tracking Badge          | 1 CaitSith2 12/424/22  | 0 CaitSith2 23/305/47  | 1 CaitSith2 12/424/22  | 1 CaitSith2 12/424/22
+Safetynet Tracking Badge          | 3 837951602 10/610/23  | 0 CaitSith2 23/305/47  | 1 CaitSith2 12/424/22  | 1 CaitSith2 12/424/22
 
 
 ### Avalon City

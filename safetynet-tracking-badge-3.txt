@@ -1,0 +1,86 @@
+[name] New design 2
+[puzzle] Sz027
+[production-cost] 1000
+[power-usage] 610
+[lines-of-code] 23
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+..955C................
+..2..349555555C.......
+..14.156....94A.......
+............2.2....8..
+.....15554.155555556..
+.....95554.14.8.......
+.....34.14.1556.......
+......................
+......................
+
+[chip] 
+[type] ID
+[x] 4
+[y] 2
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 9
+[y] 2
+[code] 
+  mov 50 p1
++ jmp p
+  gen p0 0 0
+  tcp x0 1
++ teq x0 x1
++ mov x2 dat
++ mov x3 x1
++ mov dat x2
+  mov x0 acc
+  jmp s
+p:add -1
+s:tgt acc 0
++ mov x0 p1
+  slp 1
+
+[chip] 
+[type] RADIO
+[x] 3
+[y] 3
+[is-puzzle-provided] true
+
+[chip] 
+[type] BRIDGE
+[x] 12
+[y] 3
+
+[chip] 
+[type] BRIDGE
+[x] 14
+[y] 3
+
+[chip] 
+[type] UC4
+[x] 3
+[y] 6
+[code] 
+  tgt p0 0
+- jmp k
+  mov p1 acc
+  tgt p0 50
+- add 1
++ tgt p0 79
++ mov 8 x1
+- mov acc x1
+k:slp 1
+
+[chip] 
+[type] BANK
+[x] 13
+[y] 6
+[rom] 
+600,600,204,700,202,700,200,700,100,100,203,700,201,700
+
